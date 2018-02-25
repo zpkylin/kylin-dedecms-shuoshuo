@@ -1,0 +1,484 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>QQ个性心情：每个呵呵的后面，都有无数个草泥马在暴走_我的网站</title>
+<meta name="keywords" content="" />
+<meta name="description" content="1．不是除了你，我就没人要，只是除了你，我谁都不想要。 2．你若在我心上，情敌三千有何妨。 3．很惭愧没有什么心事可以告诉你，因为我的心事是你。 4．不敢正视你的眼睛，我怕我每个眼神都在表白。 5．在婚礼上应该发表的获证感言是，" />
+<meta name="MSSmartTagsPreventParsing" content="True">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<link rel="stylesheet" type="text/css" href="/dede58/style80_common.css">
+<link rel="stylesheet" type="text/css" href="/dede58/style80_portal_view.css">
+<script src="/dede58/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">jq = jQuery.noConflict();</script>
+<script src="/dede58/jquery.SuperSlide.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("好痛的，不要一直顶啦 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+<!--[if IE 6]>
+    <script src="/dede58/png.js" type="text/javascript" ></script>
+     <script type="text/javascript">
+     DD_belatedPNG.fix('.nav_box, .navi img, .hd_logo img, #maincontent .entry-info, #maincontent .entry-info .entry-title, .slider .slider-more, .slider-nav a, .user_link i, .usernav li .png i, .userinfo .arrow, .user_list .i_qq, .user_list .i_wb, .nav_icon, .blackbg, .comment-bubble, .slider-more');
+    </script> 
+    <script language='javascript' type="text/javascript">   
+    function ResumeError() {  
+         return true;  
+    }  
+    window.onerror = ResumeError;   
+    </script> 
+    <![endif]-->
+</head>
+<body id="nv_portal" class="pg_view">
+<!-- head begin -->
+<div id="headnav" >
+  <div id="toptb" class="cl">
+    <div class="wp"> 
+      <!-- 搜索 begin -->
+      <div id="scbar" class="cl">
+        <form id="scbar_form" name="formsearch"  action="/plus/search.php" target="_blank">
+          <input type="hidden" name="kwtype" value="0" />
+          <table cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td class="scbar_txt_td"><input type="text" name="q" id="scbar_txt" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}"/></td>
+                <td class="scbar_btn_td"><button type="submit" id="scbar_btn"  class="pn pnc"></button></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <!-- 搜索 end -->
+      <div class="userbox">
+        <ul class="usernav user_part">
+          <!-- 关注 
+          <li class="user_list"><a href="http://wpa.qq.com/msgrd?v=3&uin=1211765266&site=qq&menu=yes" target="_blank"><i class="i_qq">联系站长</i></a></li>
+          <li class="user_list"><a href="#" target="_blank" ><i class="i_wb">关注我们</i></a></li>
+          -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header">
+    <div class="hdr">
+      <div class="wp cl"> 
+        <!-- 站点LOGO -->
+        <div class="hd_logo"> <a href="/" title="宽屏清新文章类模板"> <img src="/dede58/logo.png" alt="宽屏清新文章类模板" border="0"></a> </div>
+        <!-- 导航 -->
+        <div class="nav">
+          <ul>
+            <li><a href="/" title="首页">首页<span>Home</span></a></li>
+            
+            <li><a href='/a/shangganshuoshuo/list_8_1.html' >伤感说说<span>More</span></a></li>
+            
+            <li><a href='/a/gaoxiaoshuoshuo/' >搞笑说说<span>More</span></a></li>
+            
+            <li><a href='/a/jingdianshuoshuo/' >经典说说<span>More</span></a></li>
+            <li class='a'><a href='/a/gexingshuoshuo/' >个性说说<span>More</span></a></li>
+            <li><a href='/a/xinqingduanyu/' >心情短语<span>More</span></a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- head end -->
+<div class="header_fake"></div>
+<div id="wp" class="wp j_wp">
+  <div id="pt" class="bm cl">
+    <div class="z"> <a href="/" class="nvhm" title="首页"></a></div>
+    当前位置：<a href='/'>主页</a> > 查看内容</div>
+  <div id="ct" class="ct2 wp cl">
+    <div class="mn animated fadeInUp">
+      <div class="bm vw">
+        <div class="h hm">
+          <div class="h_avr"><img src="/dede58/tx.jpg"></div>
+          <h1 class="ph">QQ个性心情：每个呵呵的后面，都有无数个草泥马在暴走</h1>
+          <p class="xg1">发布时间：2014-08-26 19:46<span class="pipe">|</span> 有 <script src="/plus/count.php?view=yes&aid=367&mid=1" type='text/javascript' language="javascript"></script> 位朋友查看</p>
+        </div>
+        <div class="s">
+          <div><strong>简介：</strong>1．不是除了你，我就没人要，只是除了你，我谁都不想要。 2．你若在我心上，情敌三千有何妨。 3．很惭愧没有什么心事可以告诉你，因为我的心事是你。 4．不敢正视你的眼睛，我怕我每个眼神都在表白。 5．在婚礼上应该发表的获证感言是，……</div>
+        </div>
+        <div class="d"> 
+          <!--ad开始-->
+          <div class="mb20">
+            <div class="portal_block_summary"> <a href="http://www.czeeland.com/" target="_blank"> <img src="/dede58/ad.jpg" width="680" height="100" ></a></div>
+          </div>
+          <!--ad结束--> 
+          　　1．不是除了你，我就没人要，只是除了你，我谁都不想要。<br />
+　　<br />
+　　2．你若在我心上，情敌三千有何妨。<br />
+　　<br />
+　　3．很惭愧没有什么心事可以告诉你，因为我的心事是你。<br />
+　　<br />
+　　4．不敢正视你的眼睛，我怕我每个眼神都在表白。<br />
+　　<br />
+　　5．在婚礼上应该发表的获证感言是，感谢误会，感谢分歧，感谢争吵，感谢偏执，感谢横眉，感谢没有分手。<br />
+　　<br />
+　　6．对讨厌的人和事露出微笑，是我们必须学会的恶心。<br />
+　　<br />
+　　7．我在你面前注不注意形象，取决于我们之间是什么关系。<br />
+　　<br />
+　　8．请牢牢记住让你疼的喘不过气的人，因为是他们教会你什么叫忍和残忍。<br />
+　　<img alt="QQ个性心情1" src="/uploads/allimg/c140826/140Z5333J91P-13393.jpg" style="height: 320px; width: 400px" /><br />
+　　9．微笑就像创可贴，掩饰得了伤口，却掩饰不了你的痛。<br />
+　　<br />
+　　10．每谈一个对象就会少一个朋友，谈恋爱就像赌博，赌赢了，一辈子，赌输了，朋友都不是。<br />
+　　<br />
+　　11．当我懒得去主动的时候，我会慢慢接受对我主动的人。<br />
+　　<br />
+　　12．回忆不起的不是伤痛，而是你曾经给的幸福。<br />
+　　<br />
+　　13．男生通常不喜欢吵架，也不主动吵架，但他们最擅长让女生忍不住找他们吵架。<br />
+　　<br />
+　　14．除了我，每个人都不适合和你白头到老。www.shuoshuokong.com<br />
+　　<br />
+　　15．如果上天再给我一次和你初逢的机会，我一定扭头就走。<br />
+　　<br />
+　　16．每个&ldquo;呵呵&rdquo;后面都有无数个草泥马在暴走。<br />
+　　<br />
+　　17．即使不见面，不说话，不发信息，心里总会留一个位置，安安稳稳的放着一个人。<br />
+　　<img alt="QQ个性心情2" src="/uploads/allimg/c140826/140Z5333W45Z-2Y64.jpg" style="height: 286px; width: 400px" /><br />
+　　18．你赢，我陪你君临天下，你输，我陪你东山再起。<br />
+　　<br />
+　　19．我不是那种肤浅地只看脸的人，我还会看看你的身材和薪水之类的。<br />
+　　<br />
+　　20．帅哥的最高境界不是你去泡妞，而是让妞来泡你。<br />
+　　<br />
+　　21．男生要珍惜身边的女生，你想想现在人口那么多女生人数比男生人数少，现在不珍惜，说不定你以后都要打光棍！<br />
+　　<br />
+　　22．不要妄加评断我，你看到的，只是我想让你看到的。<br />
+　　<br />
+　　23．最长不过执恋，最短不过善变。<br />
+　　<br />
+　　24．在家的时候发烧还会坚持上网，上学的时候打个喷嚏都会觉得是癌症晚期。<br />
+　　<br />
+　　25．快出iphone5乔布斯死了，快开演唱会杰克逊死了，快出速度与激情7时保罗死了，快考试了老师多保重。
+          <div class="pageinfo"></div>
+          <!--正文结束--> 
+          <!--ad开始-->
+          <div class="mb20">
+            <div class="portal_block_summary"> <a href="http://www.czeeland.com/" target="_blank"> <img src="/dede58/ad.jpg" width="680" height="100" ></a></div>
+          </div>
+          <!--ad结束--> 
+        </div>
+        <div class="pren pbm cl"> <em class="z">上一篇：<a href='/a/gexingshuoshuo/20140826366.html'>最牛的QQ说说：别说配不配，1块钱的打火机也能点着1万块的香烟</a> </em> <em class="y">下一篇：<a href='/a/gexingshuoshuo/20140826368.html'>超有范的说说：卖冰棒的老奶奶说，她的冰柜里装满了整个夏天</a> </em> </div>
+      </div>
+      
+      
+      <div id="comment" class="bm"> 
+        <!--兼容版，可保证页面完全兼容-->
+        <div id="SOHUCS"></div>
+        <script>
+  (function(){
+    var appid = 'cyrna3OIQ',
+    conf = 'prod_f12acd6648a127b270c750fbbf8ecb1a';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+  })()
+</script> 
+        <!-- Comment END --> 
+      </div>
+      
+      
+    </div>
+    <div class="sd pph"> 
+      <!-- 推荐图文 -->
+      <div class="portal-hd">
+        <h2>推荐图文</h2>
+      </div>
+      <div class="wonderful">
+        <div class="bd">
+          <div class="btn"> <a href="javascript:void(0)" class="prev"></a> <a href="javascript:void(0)" class="next"></a> </div>
+          <div class="tempWrap" >
+            <ul>
+              <li>
+                <div class="wonderful-pic"> <a href="/a/gexingshuoshuo/20140826394.html" title="最受欢迎的QQ心情：两情若是长久时，还" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z534511Q30-V1V.jpg" width="280" height="220" alt="最受欢迎的QQ心情：两情若是长久时，还"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/gexingshuoshuo/20140826394.html" title="最受欢迎的QQ心情：两情若是长久时，还" target="_blank">最受欢迎的QQ心情：两情若是长久时，还</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/gexingshuoshuo/" title="个性说说" target="_blank">个性说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/gexingshuoshuo/20140826350.html" title="成熟点的说说：人和人之间的距离，太" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z5325325P-206307.jpg" width="280" height="220" alt="成熟点的说说：人和人之间的距离，太"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/gexingshuoshuo/20140826350.html" title="成熟点的说说：人和人之间的距离，太" target="_blank">成熟点的说说：人和人之间的距离，太</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/gexingshuoshuo/" title="个性说说" target="_blank">个性说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/gexingshuoshuo/20140826372.html" title="很拽的心情短语：不要轻易评论我的好" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z53360P610-344Z.jpg" width="280" height="220" alt="很拽的心情短语：不要轻易评论我的好"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/gexingshuoshuo/20140826372.html" title="很拽的心情短语：不要轻易评论我的好" target="_blank">很拽的心情短语：不要轻易评论我的好</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/gexingshuoshuo/" title="个性说说" target="_blank">个性说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/gexingshuoshuo/20140826381.html" title="另类的空间说说：自从单身之后，话费" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z533Z21N0-O412.jpg" width="280" height="220" alt="另类的空间说说：自从单身之后，话费"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/gexingshuoshuo/20140826381.html" title="另类的空间说说：自从单身之后，话费" target="_blank">另类的空间说说：自从单身之后，话费</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/gexingshuoshuo/" title="个性说说" target="_blank">个性说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/gexingshuoshuo/20140826396.html" title="个性微博语录：作业加载失败，请学校" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z53459644P-133I1.jpg" width="280" height="220" alt="个性微博语录：作业加载失败，请学校"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/gexingshuoshuo/20140826396.html" title="个性微博语录：作业加载失败，请学校" target="_blank">个性微博语录：作业加载失败，请学校</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/gexingshuoshuo/" title="个性说说" target="_blank">个性说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/gexingshuoshuo/20140826339.html" title="很有感觉的句子：不要仗着我对你的好" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z531Y40930-R1Q.jpg" width="280" height="220" alt="很有感觉的句子：不要仗着我对你的好"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/gexingshuoshuo/20140826339.html" title="很有感觉的句子：不要仗着我对你的好" target="_blank">很有感觉的句子：不要仗着我对你的好</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/gexingshuoshuo/" title="个性说说" target="_blank">个性说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ranking mt20">
+        <div class="hd">
+          <div class="portal_block_summary">
+            <ul>
+              <li>周排行</li>
+              <li>月排行</li>
+              <li>总排行</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bd">
+          <ul class="top10">
+            <!--周排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/gexingshuoshuo/20140826371.html" target="_blank" title="有个性的QQ说说：别不珍惜我的">有个性的QQ说说：别不珍惜我的</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/gexingshuoshuo/20140826337.html" target="_blank" title="女生个性心情短语：有一种情绪">女生个性心情短语：有一种情绪</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/gexingshuoshuo/20140826342.html" target="_blank" title="时尚潮流的说说：原来，错过的">时尚潮流的说说：原来，错过的</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/gexingshuoshuo/20140826396.html" target="_blank" title="个性微博语录：作业加载失败，">个性微博语录：作业加载失败，</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/gexingshuoshuo/20140826374.html" target="_blank" title="霸气说说大全：你又不是我的美">霸气说说大全：你又不是我的美</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/gexingshuoshuo/20140826386.html" target="_blank" title="有型的短句：谁不会浪漫，只是">有型的短句：谁不会浪漫，只是</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/gexingshuoshuo/20140826355.html" target="_blank" title="最火的空间说说：我是一个情绪">最火的空间说说：我是一个情绪</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/gexingshuoshuo/20140826357.html" target="_blank" title="简短的个性说说：你的世界与我">简短的个性说说：你的世界与我</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/gexingshuoshuo/20140826384.html" target="_blank" title="最受欢迎心情短语：你哪里都好">最受欢迎心情短语：你哪里都好</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/gexingshuoshuo/20140826360.html" target="_blank" title="最个性的说说：如果男朋友不理">最个性的说说：如果男朋友不理</a> </li>
+ </div>
+          </ul>
+          <ul class="top10" style="display: none; ">
+            <!--月排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/gexingshuoshuo/20140826379.html" target="_blank" title="超人气心情短语：单身挺好，和">超人气心情短语：单身挺好，和</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/gexingshuoshuo/20140826394.html" target="_blank" title="最受欢迎的QQ心情：两情若是长">最受欢迎的QQ心情：两情若是长</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/gexingshuoshuo/20140826339.html" target="_blank" title="很有感觉的句子：不要仗着我对">很有感觉的句子：不要仗着我对</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/gexingshuoshuo/20140826373.html" target="_blank" title="最热的个性说说：会有一个人老">最热的个性说说：会有一个人老</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/gexingshuoshuo/20140826387.html" target="_blank" title="QQ空间个性说说：感情勉强不得">QQ空间个性说说：感情勉强不得</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/gexingshuoshuo/20140826347.html" target="_blank" title="最新QQ说说心情：才知道，朋友">最新QQ说说心情：才知道，朋友</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/gexingshuoshuo/20140826381.html" target="_blank" title="另类的空间说说：自从单身之后">另类的空间说说：自从单身之后</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/gexingshuoshuo/20140826361.html" target="_blank" title="个性心情语录：多少人曾用一颗">个性心情语录：多少人曾用一颗</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/gexingshuoshuo/20140826377.html" target="_blank" title="超拽的QQ说说：别隐身了，我老">超拽的QQ说说：别隐身了，我老</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/gexingshuoshuo/20140826367.html" target="_blank" title="QQ个性心情：每个呵呵的后面，">QQ个性心情：每个呵呵的后面，</a> </li>
+ </div>
+          </ul>
+          <ul class="top10" style="display: none; ">
+            <!--总排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/gexingshuoshuo/20140826340.html" target="_blank" title="超人气说说：只是习惯有你，不">超人气说说：只是习惯有你，不</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/gexingshuoshuo/20140826387.html" target="_blank" title="QQ空间个性说说：感情勉强不得">QQ空间个性说说：感情勉强不得</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/gexingshuoshuo/20140826377.html" target="_blank" title="超拽的QQ说说：别隐身了，我老">超拽的QQ说说：别隐身了，我老</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/gexingshuoshuo/20140826389.html" target="_blank" title="超拽个性说说：在别人的回忆中">超拽个性说说：在别人的回忆中</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/gexingshuoshuo/20140826359.html" target="_blank" title="扣扣说说大全：我最信任的人，">扣扣说说大全：我最信任的人，</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/gexingshuoshuo/20140826348.html" target="_blank" title="空间个性说说带图：爱和爱过，">空间个性说说带图：爱和爱过，</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/gexingshuoshuo/20140826364.html" target="_blank" title="QQ空间霸气说说：学校就像妓院">QQ空间霸气说说：学校就像妓院</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/gexingshuoshuo/20140826390.html" target="_blank" title="qq炫舞个性心情：不打扰，是我">qq炫舞个性心情：不打扰，是我</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/gexingshuoshuo/20140826388.html" target="_blank" title="最炫QQ心情短语：就一人，就一">最炫QQ心情短语：就一人，就一</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/gexingshuoshuo/20140826393.html" target="_blank" title="qq个性说说超拽：想说爱我，先">qq个性说说超拽：想说爱我，先</a> </li>
+ </div>
+          </ul>
+        </div>
+      </div>
+      <!--ad开始-->
+      <div class="right-ad cl"><br/>
+        <div class="portal_block_summary"> <img src="/dede58/ad2.jpg" width="280px" height="280"></div>
+      </div>
+      <!--ad结束-->
+      <div class="new-article">
+        <div class="portal-hd">
+          <div class="portal_block_summary">
+            <h2>随机推荐</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div class="frame move-span cl frame-1">
+            <ul>
+              <li>
+                <h3><a href="/a/gexingshuoshuo/20140826357.html" class="link" title="简短的个性说说：你的世界与我" target="_blank">简短的个性说说：你的世界与我</a></h3>
+                <p><i class="quote"></i>1．回忆，会使你重新爱人的技能被冻结。 2．我决定不再流...</p>
+              </li>
+<li>
+                <h3><a href="/a/gexingshuoshuo/20140826344.html" class="link" title="最酷说说大全：把你骗到手，用" target="_blank">最酷说说大全：把你骗到手，用</a></h3>
+                <p><i class="quote"></i>1．我以为小鸟飞不过沧海，是以为小鸟没有飞过沧海的勇气...</p>
+              </li>
+<li>
+                <h3><a href="/a/gexingshuoshuo/20140826358.html" class="link" title="个性说说心情短语：迩路过我生" target="_blank">个性说说心情短语：迩路过我生</a></h3>
+                <p><i class="quote"></i>1．人生就像蒲公英，看似自由，却往往身不由己。 2．你可...</p>
+              </li>
+<li>
+                <h3><a href="/a/gexingshuoshuo/20140826338.html" class="link" title="另类的说说心情：这个世界安好" target="_blank">另类的说说心情：这个世界安好</a></h3>
+                <p><i class="quote"></i>1．我习惯假装开心、假装难过，假装在意、假装无所谓，习...</p>
+              </li>
+<li>
+                <h3><a href="/a/gexingshuoshuo/20140826389.html" class="link" title="超拽个性说说：在别人的回忆中" target="_blank">超拽个性说说：在别人的回忆中</a></h3>
+                <p><i class="quote"></i>1．请别把我当傻瓜，有些事不是我不知道，只是我看在眼里...</p>
+              </li>
+<li>
+                <h3><a href="/a/gexingshuoshuo/20140826398.html" class="link" title="最酷的一句话：不是我不想停留" target="_blank">最酷的一句话：不是我不想停留</a></h3>
+                <p><i class="quote"></i>1．看别人不顺眼，是自己修养不够。 2．爱情是路，朋友是...</p>
+              </li>
+<li>
+                <h3><a href="/a/gexingshuoshuo/20140826376.html" class="link" title="有哲理的个性说说：不做盗版的" target="_blank">有哲理的个性说说：不做盗版的</a></h3>
+                <p><i class="quote"></i>1．别太在意别人对你的看法，地球现在还踩在你的脚下。...</p>
+              </li>
+<li>
+                <h3><a href="/a/gexingshuoshuo/20140826348.html" class="link" title="空间个性说说带图：爱和爱过，" target="_blank">空间个性说说带图：爱和爱过，</a></h3>
+                <p><i class="quote"></i>1．我要的爱情，一个你，一颗心，一心一意，一辈子。只是...</p>
+              </li>
+<li>
+                <h3><a href="/a/gexingshuoshuo/20140826365.html" class="link" title="愚人节空间说说：谁让我过愚人" target="_blank">愚人节空间说说：谁让我过愚人</a></h3>
+                <p><i class="quote"></i>1．愚人节并不是给愚人过的节，而是给说谎的人一次说真话...</p>
+              </li>
+<li>
+                <h3><a href="/a/gexingshuoshuo/20140826375.html" class="link" title="潮流个性说说：手机还会提醒你" target="_blank">潮流个性说说：手机还会提醒你</a></h3>
+                <p><i class="quote"></i>1．我把你的备注改成了你的名字，连名带姓最初的样子。...</p>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+jQuery(".wonderful").slide({ mainCell:".bd ul", effect:"leftLoop",easing:"easeInOutQuint",delayTime:500, vis:1, scroll:1,autoPlay:true });
+jQuery(".ranking").slide({ titCell:".hd li", mainCell:".bd",delayTime:0 });
+</script> <!--侧栏幻灯切换效果--> </div>
+<!--footer开始--> 
+
+    <div id="footer" class="cl">
+          <div id="ft" class="wp cl">
+        <div class="widget" style="text-align: right;">
+               <!-- 底部logo -->
+              <p class="ftlogo">
+              <!-- 
+              <img src="/dede58/ftlogo.png" alt="" border="0">
+              -->
+              </p>
+               <!-- 底部logo -->
+            </div>
+        <div class="widget-2 last widget">
+        <!-- 
+              <h4 class="widget-title">关于我们</h4>
+             <p>
+<a href="#">联系我们</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+( 非要我备案 88888888 )</p>
+<p>这里是站点描述，站长可以在后台自行填写网站的描述介绍信息！</p>
+-->
+<p>Copyright &#169; 2017-2020 LIULIAN. 榴莲家族 版权所有 <a href="http://www.czeeland.com/" target="_blank"></a></p>
+ </div></div></div>
+ <script src="/dede58/nav.js" type="text/javascript"></script><!--导航置顶特效-->
+ <!---Top--->
+<script type="text/javascript" src="/dede58/top.js"></script> 
+<!--footer结束-->
+</body>
+</html>

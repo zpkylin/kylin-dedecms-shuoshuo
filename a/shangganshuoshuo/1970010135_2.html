@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>(2)_我的网站</title>
+<meta name="keywords" content="" />
+<meta name="description" content="16.这个世界很小，我们就这样遇见。这个世界很大，分开就很难再见。 17.该放弃的决不挽留。该珍惜的决不放手，分手后不可以做朋友，因为彼此伤害过" />
+<meta name="MSSmartTagsPreventParsing" content="True">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<link rel="stylesheet" type="text/css" href="/dede58/style80_common.css">
+<link rel="stylesheet" type="text/css" href="/dede58/style80_portal_view.css">
+<script src="/dede58/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">jq = jQuery.noConflict();</script>
+<script src="/dede58/jquery.SuperSlide.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("好痛的，不要一直顶啦 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+<!--[if IE 6]>
+    <script src="/dede58/png.js" type="text/javascript" ></script>
+     <script type="text/javascript">
+     DD_belatedPNG.fix('.nav_box, .navi img, .hd_logo img, #maincontent .entry-info, #maincontent .entry-info .entry-title, .slider .slider-more, .slider-nav a, .user_link i, .usernav li .png i, .userinfo .arrow, .user_list .i_qq, .user_list .i_wb, .nav_icon, .blackbg, .comment-bubble, .slider-more');
+    </script> 
+    <script language='javascript' type="text/javascript">   
+    function ResumeError() {  
+         return true;  
+    }  
+    window.onerror = ResumeError;   
+    </script> 
+    <![endif]-->
+</head>
+<body id="nv_portal" class="pg_view">
+<!-- head begin -->
+<div id="headnav" >
+  <div id="toptb" class="cl">
+    <div class="wp"> 
+      <!-- 搜索 begin -->
+      <div id="scbar" class="cl">
+        <form id="scbar_form" name="formsearch"  action="/plus/search.php" target="_blank">
+          <input type="hidden" name="kwtype" value="0" />
+          <table cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td class="scbar_txt_td"><input type="text" name="q" id="scbar_txt" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}"/></td>
+                <td class="scbar_btn_td"><button type="submit" id="scbar_btn"  class="pn pnc"></button></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <!-- 搜索 end -->
+      <div class="userbox">
+        <ul class="usernav user_part">
+          <!-- 关注 
+          <li class="user_list"><a href="http://wpa.qq.com/msgrd?v=3&uin=1211765266&site=qq&menu=yes" target="_blank"><i class="i_qq">联系站长</i></a></li>
+          <li class="user_list"><a href="#" target="_blank" ><i class="i_wb">关注我们</i></a></li>
+          -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header">
+    <div class="hdr">
+      <div class="wp cl"> 
+        <!-- 站点LOGO -->
+        <div class="hd_logo"> <a href="/" title="宽屏清新文章类模板"> <img src="/dede58/logo.png" alt="宽屏清新文章类模板" border="0"></a> </div>
+        <!-- 导航 -->
+        <div class="nav">
+          <ul>
+            <li><a href="/" title="首页">首页<span>Home</span></a></li>
+            <li class='a'><a href='/a/shangganshuoshuo/list_8_1.html' >伤感说说<span>More</span></a></li>
+            <li><a href='/a/gaoxiaoshuoshuo/' >搞笑说说<span>More</span></a></li>
+            
+            <li><a href='/a/jingdianshuoshuo/' >经典说说<span>More</span></a></li>
+            
+            <li><a href='/a/gexingshuoshuo/' >个性说说<span>More</span></a></li>
+            
+            <li><a href='/a/xinqingduanyu/' >心情短语<span>More</span></a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- head end -->
+<div class="header_fake"></div>
+<div id="wp" class="wp j_wp">
+  <div id="pt" class="bm cl">
+    <div class="z"> <a href="/" class="nvhm" title="首页"></a></div>
+    当前位置：<a href='/'>主页</a> > 查看内容</div>
+  <div id="ct" class="ct2 wp cl">
+    <div class="mn animated fadeInUp">
+      <div class="bm vw">
+        <div class="h hm">
+          <div class="h_avr"><img src="/dede58/tx.jpg"></div>
+          <h1 class="ph">(2)</h1>
+          <p class="xg1">发布时间：1970-01-01 08:00<span class="pipe">|</span> 有 <script src="/plus/count.php?view=yes&aid=35&mid=" type='text/javascript' language="javascript"></script> 位朋友查看</p>
+        </div>
+        <div class="s">
+          <div><strong>简介：</strong>16.这个世界很小，我们就这样遇见。这个世界很大，分开就很难再见。 17.该放弃的决不挽留。该珍惜的决不放手，分手后不可以做朋友，因为彼此伤害过……</div>
+        </div>
+        <div class="d"> 
+          <!--ad开始-->
+          <div class="mb20">
+            <div class="portal_block_summary"> <a href="http://www.czeeland.com/" target="_blank"> <img src="/dede58/ad.jpg" width="680" height="100" ></a></div>
+          </div>
+          <!--ad结束--> 
+          
+
+
+
+
+<br />
+　　16.这个世界很小，我们就这样遇见。这个世界很大，分开就很难再见。<br />
+<br />
+　　17.该放弃的决不挽留。该珍惜的决不放手，分手后不可以做朋友，因为彼此伤害过！也不可以做敌人，因为彼此深爱过。<br />
+<br />
+　　18.分开后，我过得还可以，不好不坏，不惊不喜，一切只是还可以。<br />
+<br />
+　　19.分手后，不要再回头。不要感觉很失败，更不要觉得自己浪费了几年生命。如果这让你学到了一些东西，那么这份感情就不是失败的。<br />
+<br />
+　　20.不要说，离开以后还会想念；不要说，分手以后还是朋友。<br />
+<br />
+　　21.一次失恋，一个困难，你允许它改变你到什么程度？你让它带你到什么地方？你要如何应对。取舍选择？一切，都看你自己。<br />
+　　<img alt="分手伤感说说：一直以伤害的方式相爱，直至分开" src="/uploads/allimg/c140826/140Z4I43I0-4D49.jpg" style="height: 274px; width: 400px" /><br />
+　　22.你说我是你的命，可分开的时候你也没死。<br />
+<br />
+　　23.爱上一个人并不可怕，怕的是一发不可收拾；分手了并不可怕，怕的是一直还放不下。<br />
+<br />
+　　24.或许、分手就是我们的结局，可我不后悔，因为我曾拥有过！<br />
+<br />
+　　25.我们一直以伤害的方式相爱，直至分开。<br />
+<br />
+　　26.分手后的挽留，都是多余的，与其给自己不可能的希望，还不如笑着说再见。<br />
+<br />
+　　27.为什么明明在一起很久很久的人，却突然就分开了。<br />
+<br />
+　　28.不出现，不打扰，是我最后爱你的方式。<br />
+<br />
+　　29.或者这是最好的结果，现在分手总好过你不爱我一拖再拖。<br />
+<br />
+　　30.所谓失恋，不是失去过去，因为过去已然实实在在地发生过了，没有人能更改；也不是失去未来，因为将来可能的完美或者不完美只是你的臆想，你尚未经历，何谈失去。失恋，或许失去的是一种习惯，一种对爱的假想。
+          <div class="pageinfo"><li><a>共2页: </a></li><li><a href='1970010135.html'>上一页</a></li><li><a href='1970010135.html'>1</a></li><li class="thisclass"><a href='#'>2</a></li><li><a href='#'>下一页</a></li></div>
+          <!--正文结束--> 
+          <!--ad开始-->
+          <div class="mb20">
+            <div class="portal_block_summary"> <a href="http://www.czeeland.com/" target="_blank"> <img src="/dede58/ad.jpg" width="680" height="100" ></a></div>
+          </div>
+          <!--ad结束--> 
+        </div>
+        <div class="pren pbm cl"> <em class="z">上一篇：没有了 </em> <em class="y">下一篇：没有了 </em> </div>
+      </div>
+      
+      
+      <div id="comment" class="bm"> 
+        <!--兼容版，可保证页面完全兼容-->
+        <div id="SOHUCS"></div>
+        <script>
+  (function(){
+    var appid = 'cyrna3OIQ',
+    conf = 'prod_f12acd6648a127b270c750fbbf8ecb1a';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+  })()
+</script> 
+        <!-- Comment END --> 
+      </div>
+      
+      
+    </div>
+    <div class="sd pph"> 
+      <!-- 推荐图文 -->
+      <div class="portal-hd">
+        <h2>推荐图文</h2>
+      </div>
+      <div class="wonderful">
+        <div class="bd">
+          <div class="btn"> <a href="javascript:void(0)" class="prev"></a> <a href="javascript:void(0)" class="next"></a> </div>
+          <div class="tempWrap" >
+            <ul>
+              <li>
+                <div class="wonderful-pic"> <a href="/a/shangganshuoshuo/2014082682.html" title="让人流泪的QQ心情：我忘了，你已经不再" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z4KL05630-C423.jpg" width="280" height="220" alt="让人流泪的QQ心情：我忘了，你已经不再"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/shangganshuoshuo/2014082682.html" title="让人流泪的QQ心情：我忘了，你已经不再" target="_blank">让人流泪的QQ心情：我忘了，你已经不再</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/shangganshuoshuo/list_8_1.html" title="伤感说说" target="_blank">伤感说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/shangganshuoshuo/2014082686.html" title="2013伤感心情短语：不要接近我熟悉我心" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z4K9234120-92322.jpg" width="280" height="220" alt="2013伤感心情短语：不要接近我熟悉我心"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/shangganshuoshuo/2014082686.html" title="2013伤感心情短语：不要接近我熟悉我心" target="_blank">2013伤感心情短语：不要接近我熟悉我心</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/shangganshuoshuo/list_8_1.html" title="伤感说说" target="_blank">伤感说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/shangganshuoshuo/2014082688.html" title="QQ伤感说说控：我爱的很小心，却还是伤" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z4L01b0P-1TJ.jpg" width="280" height="220" alt="QQ伤感说说控：我爱的很小心，却还是伤"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/shangganshuoshuo/2014082688.html" title="QQ伤感说说控：我爱的很小心，却还是伤" target="_blank">QQ伤感说说控：我爱的很小心，却还是伤</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/shangganshuoshuo/list_8_1.html" title="伤感说说" target="_blank">伤感说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/shangganshuoshuo/2014082674.html" title="伤感文字说说：我爱过，到最后还是我" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z4K5N0320-19219.jpg" width="280" height="220" alt="伤感文字说说：我爱过，到最后还是我"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/shangganshuoshuo/2014082674.html" title="伤感文字说说：我爱过，到最后还是我" target="_blank">伤感文字说说：我爱过，到最后还是我</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/shangganshuoshuo/list_8_1.html" title="伤感说说" target="_blank">伤感说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/shangganshuoshuo/2014082664.html" title="伤感短说说：我对你设置了特别关心，" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z4K2035410-35229.jpg" width="280" height="220" alt="伤感短说说：我对你设置了特别关心，"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/shangganshuoshuo/2014082664.html" title="伤感短说说：我对你设置了特别关心，" target="_blank">伤感短说说：我对你设置了特别关心，</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/shangganshuoshuo/list_8_1.html" title="伤感说说" target="_blank">伤感说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/shangganshuoshuo/2014082693.html" title="伤心难过的说说：你没那么多观众，别" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z4L260K10-15S8.jpg" width="280" height="220" alt="伤心难过的说说：你没那么多观众，别"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/shangganshuoshuo/2014082693.html" title="伤心难过的说说：你没那么多观众，别" target="_blank">伤心难过的说说：你没那么多观众，别</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/shangganshuoshuo/list_8_1.html" title="伤感说说" target="_blank">伤感说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ranking mt20">
+        <div class="hd">
+          <div class="portal_block_summary">
+            <ul>
+              <li>周排行</li>
+              <li>月排行</li>
+              <li>总排行</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bd">
+          <ul class="top10">
+            <!--周排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/shangganshuoshuo/2014082651.html" target="_blank" title="伤感文字控说说图片：无话不说">伤感文字控说说图片：无话不说</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/shangganshuoshuo/2014082678.html" target="_blank" title="伤感长说说：分手后，我失去的">伤感长说说：分手后，我失去的</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/shangganshuoshuo/2014082691.html" target="_blank" title="QQ空间说说伤感的：原来，没有">QQ空间说说伤感的：原来，没有</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/shangganshuoshuo/2014082674.html" target="_blank" title="伤感文字说说：我爱过，到最后">伤感文字说说：我爱过，到最后</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/shangganshuoshuo/2014082661.html" target="_blank" title="失落的心情短语：我们都在淡化">失落的心情短语：我们都在淡化</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/shangganshuoshuo/2014082671.html" target="_blank" title="最伤感的说说：一句话的爱情，">最伤感的说说：一句话的爱情，</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/shangganshuoshuo/2014082680.html" target="_blank" title="唯美伤感文字：快乐，不过是给">唯美伤感文字：快乐，不过是给</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/shangganshuoshuo/2014082670.html" target="_blank" title="让人心酸的句子：爱一个人有多">让人心酸的句子：爱一个人有多</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/shangganshuoshuo/2014082677.html" target="_blank" title="伤感语录：总有一些句子，你看">伤感语录：总有一些句子，你看</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/shangganshuoshuo/2014082666.html" target="_blank" title="伤感说说心情短语：我对你的隐">伤感说说心情短语：我对你的隐</a> </li>
+ </div>
+          </ul>
+          <ul class="top10" style="display: none; ">
+            <!--月排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/shangganshuoshuo/2014082693.html" target="_blank" title="伤心难过的说说：你没那么多观">伤心难过的说说：你没那么多观</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/shangganshuoshuo/2014082658.html" target="_blank" title="伤感女生说说：旧情人给的问候">伤感女生说说：旧情人给的问候</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/shangganshuoshuo/2014082671.html" target="_blank" title="最伤感的说说：一句话的爱情，">最伤感的说说：一句话的爱情，</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/shangganshuoshuo/2014082660.html" target="_blank" title="伤感微博说说：每次想到你，就">伤感微博说说：每次想到你，就</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/shangganshuoshuo/2014082673.html" target="_blank" title="伤感的QQ说说大全：我做过最勇">伤感的QQ说说大全：我做过最勇</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/shangganshuoshuo/2014082675.html" target="_blank" title="心碎的心情短语：原来，世界上">心碎的心情短语：原来，世界上</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/shangganshuoshuo/2014082690.html" target="_blank" title="QQ说说伤感：一颗心，要受伤多">QQ说说伤感：一颗心，要受伤多</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/shangganshuoshuo/2014082676.html" target="_blank" title="失恋后的说说心情：不要说祝我">失恋后的说说心情：不要说祝我</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/shangganshuoshuo/2014082653.html" target="_blank" title="看了想哭的句子：失恋了一次，">看了想哭的句子：失恋了一次，</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/shangganshuoshuo/2014082647.html" target="_blank" title="唯美感伤图片素材：有些人会慢">唯美感伤图片素材：有些人会慢</a> </li>
+ </div>
+          </ul>
+          <ul class="top10" style="display: none; ">
+            <!--总排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/shangganshuoshuo/2014082656.html" target="_blank" title="伤感想哭说说：不想看你不开心">伤感想哭说说：不想看你不开心</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/shangganshuoshuo/2014082675.html" target="_blank" title="心碎的心情短语：原来，世界上">心碎的心情短语：原来，世界上</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/shangganshuoshuo/2014082648.html" target="_blank" title="伤心难过的空间说说：总会有一">伤心难过的空间说说：总会有一</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/shangganshuoshuo/2014082694.html" target="_blank" title="最悲伤的一句话：我一直都在你">最悲伤的一句话：我一直都在你</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/shangganshuoshuo/2014082690.html" target="_blank" title="QQ说说伤感：一颗心，要受伤多">QQ说说伤感：一颗心，要受伤多</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/shangganshuoshuo/2014082664.html" target="_blank" title="伤感短说说：我对你设置了特别">伤感短说说：我对你设置了特别</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/shangganshuoshuo/2014082658.html" target="_blank" title="伤感女生说说：旧情人给的问候">伤感女生说说：旧情人给的问候</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/shangganshuoshuo/2014082659.html" target="_blank" title="伤心说说大全：那些没出口的想">伤心说说大全：那些没出口的想</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/shangganshuoshuo/2014082654.html" target="_blank" title="网络伤感句子：最痛的，不是离">网络伤感句子：最痛的，不是离</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/shangganshuoshuo/2014082668.html" target="_blank" title="悲伤说说大全：总有那么一个人">悲伤说说大全：总有那么一个人</a> </li>
+ </div>
+          </ul>
+        </div>
+      </div>
+      <!--ad开始-->
+      <div class="right-ad cl"><br/>
+        <div class="portal_block_summary"> <img src="/dede58/ad2.jpg" width="280px" height="280"></div>
+      </div>
+      <!--ad结束-->
+      <div class="new-article">
+        <div class="portal-hd">
+          <div class="portal_block_summary">
+            <h2>随机推荐</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div class="frame move-span cl frame-1">
+            <ul>
+              <li>
+                <h3><a href="/a/shangganshuoshuo/2014082671.html" class="link" title="最伤感的说说：一句话的爱情，" target="_blank">最伤感的说说：一句话的爱情，</a></h3>
+                <p><i class="quote"></i>1．左眼没有见过右眼一面，不懂安慰，只懂陪它落泪。 2．...</p>
+              </li>
+<li>
+                <h3><a href="/a/shangganshuoshuo/2014082647.html" class="link" title="唯美感伤图片素材：有些人会慢" target="_blank">唯美感伤图片素材：有些人会慢</a></h3>
+                <p><i class="quote"></i>1．我怕一毕业，身边就少了那群能让我笑的疯子。 2．没有...</p>
+              </li>
+<li>
+                <h3><a href="/a/shangganshuoshuo/2014082681.html" class="link" title="心情不好的说说：最近的访客，" target="_blank">心情不好的说说：最近的访客，</a></h3>
+                <p><i class="quote"></i>1．比起怒骂，沉默才是最彻底的失望 2．因为有了因为，所...</p>
+              </li>
+<li>
+                <h3><a href="/a/shangganshuoshuo/2014082678.html" class="link" title="伤感长说说：分手后，我失去的" target="_blank">伤感长说说：分手后，我失去的</a></h3>
+                <p><i class="quote"></i>1．风勾起了往事沧桑，雨泛白了爱恨情长。谁也无法抹去隐...</p>
+              </li>
+<li>
+                <h3><a href="/a/shangganshuoshuo/2014082654.html" class="link" title="网络伤感句子：最痛的，不是离" target="_blank">网络伤感句子：最痛的，不是离</a></h3>
+                <p><i class="quote"></i>1．你必须要坚强，即使通往坚强的路会受伤，会流泪，也只...</p>
+              </li>
+<li>
+                <h3><a href="/a/shangganshuoshuo/2014082658.html" class="link" title="伤感女生说说：旧情人给的问候" target="_blank">伤感女生说说：旧情人给的问候</a></h3>
+                <p><i class="quote"></i>1．我曾路过你的心，不是我不想停留，而是你不肯收留。...</p>
+              </li>
+<li>
+                <h3><a href="/a/shangganshuoshuo/2014082668.html" class="link" title="悲伤说说大全：总有那么一个人" target="_blank">悲伤说说大全：总有那么一个人</a></h3>
+                <p><i class="quote"></i>1．我与他擦肩而过了N次，衣服都擦破了，都没擦出火花。...</p>
+              </li>
+<li>
+                <h3><a href="/a/shangganshuoshuo/2014082687.html" class="link" title="伤心难过的说说：抱歉，我失去" target="_blank">伤心难过的说说：抱歉，我失去</a></h3>
+                <p><i class="quote"></i>1．分手后不可以做朋友，因为彼此伤害过，不可以做敌人，...</p>
+              </li>
+<li>
+                <h3><a href="/a/shangganshuoshuo/2014082672.html" class="link" title="心累的说说心情：下次可不可以" target="_blank">心累的说说心情：下次可不可以</a></h3>
+                <p><i class="quote"></i>1．有一个人，教会你怎样去爱了，但是，他却不爱你了。...</p>
+              </li>
+<li>
+                <h3><a href="/a/shangganshuoshuo/2014082660.html" class="link" title="伤感微博说说：每次想到你，就" target="_blank">伤感微博说说：每次想到你，就</a></h3>
+                <p><i class="quote"></i>1．我还记得喜欢你到不行的感觉，只是再也不敢了。 2．一...</p>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+jQuery(".wonderful").slide({ mainCell:".bd ul", effect:"leftLoop",easing:"easeInOutQuint",delayTime:500, vis:1, scroll:1,autoPlay:true });
+jQuery(".ranking").slide({ titCell:".hd li", mainCell:".bd",delayTime:0 });
+</script> <!--侧栏幻灯切换效果--> </div>
+<!--footer开始--> 
+
+    <div id="footer" class="cl">
+          <div id="ft" class="wp cl">
+        <div class="widget" style="text-align: right;">
+               <!-- 底部logo -->
+              <p class="ftlogo">
+              <!-- 
+              <img src="/dede58/ftlogo.png" alt="" border="0">
+              -->
+              </p>
+               <!-- 底部logo -->
+            </div>
+        <div class="widget-2 last widget">
+        <!-- 
+              <h4 class="widget-title">关于我们</h4>
+             <p>
+<a href="#">联系我们</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+( 非要我备案 88888888 )</p>
+<p>这里是站点描述，站长可以在后台自行填写网站的描述介绍信息！</p>
+-->
+<p>Copyright &#169; 2017-2020 LIULIAN. 榴莲家族 版权所有 <a href="http://www.czeeland.com/" target="_blank"></a></p>
+ </div></div></div>
+ <script src="/dede58/nav.js" type="text/javascript"></script><!--导航置顶特效-->
+ <!---Top--->
+<script type="text/javascript" src="/dede58/top.js"></script> 
+<!--footer结束-->
+</body>
+</html>

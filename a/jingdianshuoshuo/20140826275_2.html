@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>打动人心的话：我们总是把最伤人的话，留给最亲的人(2)_我的网站</title>
+<meta name="keywords" content="" />
+<meta name="description" content="21．先相信你自己，然后别人才会相信你。 22．我没说我是好人，但我不像你，顶着好人的面具坐着坏事。 23．梦想总是跑在我前面，追寻它们，乃至仅有" />
+<meta name="MSSmartTagsPreventParsing" content="True">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<link rel="stylesheet" type="text/css" href="/dede58/style80_common.css">
+<link rel="stylesheet" type="text/css" href="/dede58/style80_portal_view.css">
+<script src="/dede58/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">jq = jQuery.noConflict();</script>
+<script src="/dede58/jquery.SuperSlide.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("好痛的，不要一直顶啦 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+<!--[if IE 6]>
+    <script src="/dede58/png.js" type="text/javascript" ></script>
+     <script type="text/javascript">
+     DD_belatedPNG.fix('.nav_box, .navi img, .hd_logo img, #maincontent .entry-info, #maincontent .entry-info .entry-title, .slider .slider-more, .slider-nav a, .user_link i, .usernav li .png i, .userinfo .arrow, .user_list .i_qq, .user_list .i_wb, .nav_icon, .blackbg, .comment-bubble, .slider-more');
+    </script> 
+    <script language='javascript' type="text/javascript">   
+    function ResumeError() {  
+         return true;  
+    }  
+    window.onerror = ResumeError;   
+    </script> 
+    <![endif]-->
+</head>
+<body id="nv_portal" class="pg_view">
+<!-- head begin -->
+<div id="headnav" >
+  <div id="toptb" class="cl">
+    <div class="wp"> 
+      <!-- 搜索 begin -->
+      <div id="scbar" class="cl">
+        <form id="scbar_form" name="formsearch"  action="/plus/search.php" target="_blank">
+          <input type="hidden" name="kwtype" value="0" />
+          <table cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td class="scbar_txt_td"><input type="text" name="q" id="scbar_txt" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}"/></td>
+                <td class="scbar_btn_td"><button type="submit" id="scbar_btn"  class="pn pnc"></button></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <!-- 搜索 end -->
+      <div class="userbox">
+        <ul class="usernav user_part">
+          <!-- 关注 
+          <li class="user_list"><a href="http://wpa.qq.com/msgrd?v=3&uin=1211765266&site=qq&menu=yes" target="_blank"><i class="i_qq">联系站长</i></a></li>
+          <li class="user_list"><a href="#" target="_blank" ><i class="i_wb">关注我们</i></a></li>
+          -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header">
+    <div class="hdr">
+      <div class="wp cl"> 
+        <!-- 站点LOGO -->
+        <div class="hd_logo"> <a href="/" title="宽屏清新文章类模板"> <img src="/dede58/logo.png" alt="宽屏清新文章类模板" border="0"></a> </div>
+        <!-- 导航 -->
+        <div class="nav">
+          <ul>
+            <li><a href="/" title="首页">首页<span>Home</span></a></li>
+            
+            <li><a href='/a/shangganshuoshuo/list_8_1.html' >伤感说说<span>More</span></a></li>
+            
+            <li><a href='/a/gaoxiaoshuoshuo/' >搞笑说说<span>More</span></a></li>
+            <li class='a'><a href='/a/jingdianshuoshuo/' >经典说说<span>More</span></a></li>
+            <li><a href='/a/gexingshuoshuo/' >个性说说<span>More</span></a></li>
+            
+            <li><a href='/a/xinqingduanyu/' >心情短语<span>More</span></a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- head end -->
+<div class="header_fake"></div>
+<div id="wp" class="wp j_wp">
+  <div id="pt" class="bm cl">
+    <div class="z"> <a href="/" class="nvhm" title="首页"></a></div>
+    当前位置：<a href='/'>主页</a> > 查看内容</div>
+  <div id="ct" class="ct2 wp cl">
+    <div class="mn animated fadeInUp">
+      <div class="bm vw">
+        <div class="h hm">
+          <div class="h_avr"><img src="/dede58/tx.jpg"></div>
+          <h1 class="ph">打动人心的话：我们总是把最伤人的话，留给最亲的人(2)</h1>
+          <p class="xg1">发布时间：2014-08-26 19:25<span class="pipe">|</span> 有 <script src="/plus/count.php?view=yes&aid=275&mid=1" type='text/javascript' language="javascript"></script> 位朋友查看</p>
+        </div>
+        <div class="s">
+          <div><strong>简介：</strong>21．先相信你自己，然后别人才会相信你。 22．我没说我是好人，但我不像你，顶着好人的面具坐着坏事。 23．梦想总是跑在我前面，追寻它们，乃至仅有……</div>
+        </div>
+        <div class="d"> 
+          <!--ad开始-->
+          <div class="mb20">
+            <div class="portal_block_summary"> <a href="http://www.czeeland.com/" target="_blank"> <img src="/dede58/ad.jpg" width="680" height="100" ></a></div>
+          </div>
+          <!--ad结束--> 
+          
+
+
+
+
+<br />
+　　21．先相信你自己，然后别人才会相信你。<br />
+　　<br />
+　　22．我没说我是好人，但我不像你，顶着好人的面具坐着坏事。<br />
+　　<br />
+　　23．梦想总是跑在我前面，追寻它们，乃至仅有一瞬间的与梦想合而为一，也都是动人的生命奇迹。<br />
+　　<br />
+　　24．获得朋友的唯一之道，是自己主动去做别人的朋友。<br />
+　　<br />
+　　25．我们总是把最伤人的话，留给最亲的人。<br />
+　　<br />
+　　26．生气往往会蒙蔽我们的判断力。<br />
+　　<br />
+　　27．爱情就像笑话，笑死了别人，笑疼了自己。<br />
+　　<br />
+　　28．天堂和地狱，都是由心和行为所造作的。我们不要怕地狱，要怕的是心的偏向。<br />
+　　<br />
+　　29．爱情就像沙漏，心满了，脑子就空了。<br />
+　　<br />
+　　30．聪明人的嘴藏在心里，愚蠢人的心摆在嘴里。<br />
+　　<img alt="打动人心的话：我们总是把最伤人的话，留给最亲的人" src="/uploads/allimg/c140826/140Z5223W240-O600.jpg" /><br />
+　　31．如果我看起来没有精神，可能是累了，可能是病了，最大可能是饿了&hellip;<br />
+　　<br />
+　　32．愤怒是吹熄心灵明灯的狂风。<br />
+　　<br />
+　　33．如果你想要某样东西，别等着有人某天会送给你。生命太短，等不得。<br />
+　　<br />
+　　34．有多少力量，就做多少事；切莫等待，等待常会落空。<br />
+　　<br />
+　　35．经常给家里打个电话，即使嘴上都说不想对方，其实内心早已情动于中；有了女（男）朋友，也不能忘了爹和娘。<br />
+　　<br />
+　　36．在你想要放弃的那一刻，想想为什么当初坚持走到了这里。<br />
+　　<br />
+　　37．最高贵的复仇是宽恕对方。<br />
+　　<br />
+　　38．命运从不敲门，也从不询问，它只是习惯破门而入。<br />
+　　<br />
+　　39．当你知道金子比面子重要时，你成熟了；当你用金子挽回面子时，你成功了。<br />
+　　<br />
+　　40．永远不要瞧不起家境贫困的同学，他们在相对差的条件下做到了和你一样的成绩，已经说明他们比你更加出色。每个人的生活都应该是平等的，尽你所能去帮助他们。
+          <div class="pageinfo"><li><a>共2页: </a></li><li><a href='20140826275.html'>上一页</a></li><li><a href='20140826275.html'>1</a></li><li class="thisclass"><a href='#'>2</a></li><li><a href='#'>下一页</a></li></div>
+          <!--正文结束--> 
+          <!--ad开始-->
+          <div class="mb20">
+            <div class="portal_block_summary"> <a href="http://www.czeeland.com/" target="_blank"> <img src="/dede58/ad.jpg" width="680" height="100" ></a></div>
+          </div>
+          <!--ad结束--> 
+        </div>
+        <div class="pren pbm cl"> <em class="z">上一篇：<a href='/a/jingdianshuoshuo/20140826274.html'>空间经典说说：世界上没有陌生人，只有还没认识的朋友</a> </em> <em class="y">下一篇：<a href='/a/jingdianshuoshuo/20140826276.html'>经典说说心情，30句贴心话送给最亲爱的闺蜜</a> </em> </div>
+      </div>
+      
+      
+      <div id="comment" class="bm"> 
+        <!--兼容版，可保证页面完全兼容-->
+        <div id="SOHUCS"></div>
+        <script>
+  (function(){
+    var appid = 'cyrna3OIQ',
+    conf = 'prod_f12acd6648a127b270c750fbbf8ecb1a';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+  })()
+</script> 
+        <!-- Comment END --> 
+      </div>
+      
+      
+    </div>
+    <div class="sd pph"> 
+      <!-- 推荐图文 -->
+      <div class="portal-hd">
+        <h2>推荐图文</h2>
+      </div>
+      <div class="wonderful">
+        <div class="bd">
+          <div class="btn"> <a href="javascript:void(0)" class="prev"></a> <a href="javascript:void(0)" class="next"></a> </div>
+          <div class="tempWrap" >
+            <ul>
+              <li>
+                <div class="wonderful-pic"> <a href="/a/jingdianshuoshuo/20140826243.html" title="经典个人说说：不善言辞的我，却总想" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z521104L60-3F41.jpg" width="280" height="220" alt="经典个人说说：不善言辞的我，却总想"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/jingdianshuoshuo/20140826243.html" title="经典个人说说：不善言辞的我，却总想" target="_blank">经典个人说说：不善言辞的我，却总想</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/jingdianshuoshuo/" title="经典说说" target="_blank">经典说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/jingdianshuoshuo/20140826281.html" title="有道理的句子：这一秒不放弃，下一秒" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z522FM0P-1031c.jpg" width="280" height="220" alt="有道理的句子：这一秒不放弃，下一秒"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/jingdianshuoshuo/20140826281.html" title="有道理的句子：这一秒不放弃，下一秒" target="_blank">有道理的句子：这一秒不放弃，下一秒</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/jingdianshuoshuo/" title="经典说说" target="_blank">经典说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/jingdianshuoshuo/20140826269.html" title="QQ空间经典说说：太勉强自己的话，总有" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z5220QW20-4FX.jpg" width="280" height="220" alt="QQ空间经典说说：太勉强自己的话，总有"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/jingdianshuoshuo/20140826269.html" title="QQ空间经典说说：太勉强自己的话，总有" target="_blank">QQ空间经典说说：太勉强自己的话，总有</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/jingdianshuoshuo/" title="经典说说" target="_blank">经典说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/jingdianshuoshuo/20140826232.html" title="经典说说配图：最难开口的事就是，初" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z5204G520-243508.jpg" width="280" height="220" alt="经典说说配图：最难开口的事就是，初"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/jingdianshuoshuo/20140826232.html" title="经典说说配图：最难开口的事就是，初" target="_blank">经典说说配图：最难开口的事就是，初</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/jingdianshuoshuo/" title="经典说说" target="_blank">经典说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/jingdianshuoshuo/20140826221.html" title="感悟人生说说：如果你还可以努力，就" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z5195GAZ-T008.jpg" width="280" height="220" alt="感悟人生说说：如果你还可以努力，就"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/jingdianshuoshuo/20140826221.html" title="感悟人生说说：如果你还可以努力，就" target="_blank">感悟人生说说：如果你还可以努力，就</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/jingdianshuoshuo/" title="经典说说" target="_blank">经典说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/jingdianshuoshuo/20140826222.html" title="很好的说说加图片：有些歌，就好像在" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z51b0NR0-3015G.jpg" width="280" height="220" alt="很好的说说加图片：有些歌，就好像在"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/jingdianshuoshuo/20140826222.html" title="很好的说说加图片：有些歌，就好像在" target="_blank">很好的说说加图片：有些歌，就好像在</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/jingdianshuoshuo/" title="经典说说" target="_blank">经典说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ranking mt20">
+        <div class="hd">
+          <div class="portal_block_summary">
+            <ul>
+              <li>周排行</li>
+              <li>月排行</li>
+              <li>总排行</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bd">
+          <ul class="top10">
+            <!--周排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/jingdianshuoshuo/20140826256.html" target="_blank" title="最新经典说说大全：上辈子一定">最新经典说说大全：上辈子一定</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/jingdianshuoshuo/20140826249.html" target="_blank" title="歌词中的经典句子：你都如何回">歌词中的经典句子：你都如何回</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/jingdianshuoshuo/20140826255.html" target="_blank" title="超现实的QQ说说：回忆是件很累">超现实的QQ说说：回忆是件很累</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/jingdianshuoshuo/20140826247.html" target="_blank" title="金典说说心情短语：那些令你哭">金典说说心情短语：那些令你哭</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/jingdianshuoshuo/20140826282.html" target="_blank" title="好的QQ心情：不要欺骗，你能骗">好的QQ心情：不要欺骗，你能骗</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/jingdianshuoshuo/20140826251.html" target="_blank" title="精品空间说说：谈恋爱就像赌博">精品空间说说：谈恋爱就像赌博</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/jingdianshuoshuo/20140826263.html" target="_blank" title="完美语录：考试时，蒙对了总比">完美语录：考试时，蒙对了总比</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/jingdianshuoshuo/20140826271.html" target="_blank" title="很赞的心情短语：总有一段时间">很赞的心情短语：总有一段时间</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/jingdianshuoshuo/20140826268.html" target="_blank" title="很不错的句子：有些人，只要一">很不错的句子：有些人，只要一</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/jingdianshuoshuo/20140826226.html" target="_blank" title="经典的带图片说说：生活就像心">经典的带图片说说：生活就像心</a> </li>
+ </div>
+          </ul>
+          <ul class="top10" style="display: none; ">
+            <!--月排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/jingdianshuoshuo/20140826279.html" target="_blank" title="完美的心情短语：这个世界很大">完美的心情短语：这个世界很大</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/jingdianshuoshuo/20140826254.html" target="_blank" title="一句话经典语录：你没资格说我">一句话经典语录：你没资格说我</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/jingdianshuoshuo/20140826229.html" target="_blank" title="说说控带图片：生命那么短，我">说说控带图片：生命那么短，我</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/jingdianshuoshuo/20140826273.html" target="_blank" title="qq心情经典语录：真正的成熟，">qq心情经典语录：真正的成熟，</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/jingdianshuoshuo/20140826267.html" target="_blank" title="打动人心的QQ说说：有多少我爱">打动人心的QQ说说：有多少我爱</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/jingdianshuoshuo/20140826227.html" target="_blank" title="转发最多的说说：那些说着永不">转发最多的说说：那些说着永不</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/jingdianshuoshuo/20140826252.html" target="_blank" title="QQ女生说说：做我男朋友行不行">QQ女生说说：做我男朋友行不行</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/jingdianshuoshuo/20140826233.html" target="_blank" title="说说大全最新版：怎知我用一转">说说大全最新版：怎知我用一转</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/jingdianshuoshuo/20140826249.html" target="_blank" title="歌词中的经典句子：你都如何回">歌词中的经典句子：你都如何回</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/jingdianshuoshuo/20140826237.html" target="_blank" title="经典心情语录：爱上一座城，大">经典心情语录：爱上一座城，大</a> </li>
+ </div>
+          </ul>
+          <ul class="top10" style="display: none; ">
+            <!--总排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/jingdianshuoshuo/20140826253.html" target="_blank" title="非主流空间说说：有时候，一个">非主流空间说说：有时候，一个</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/jingdianshuoshuo/20140826280.html" target="_blank" title="QQ哲理说说：人生需要不断前行">QQ哲理说说：人生需要不断前行</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/jingdianshuoshuo/20140826233.html" target="_blank" title="说说大全最新版：怎知我用一转">说说大全最新版：怎知我用一转</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/jingdianshuoshuo/20140826234.html" target="_blank" title="经典说说心情短语：爱情最初红">经典说说心情短语：爱情最初红</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/jingdianshuoshuo/20140826242.html" target="_blank" title="毕业说说大全：我不想，我不想">毕业说说大全：我不想，我不想</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/jingdianshuoshuo/20140826241.html" target="_blank" title="QQ金典说说：完美的男友，不吸">QQ金典说说：完美的男友，不吸</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/jingdianshuoshuo/20140826271.html" target="_blank" title="很赞的心情短语：总有一段时间">很赞的心情短语：总有一段时间</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/jingdianshuoshuo/20140826222.html" target="_blank" title="很好的说说加图片：有些歌，就">很好的说说加图片：有些歌，就</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/jingdianshuoshuo/20140826239.html" target="_blank" title="别人必评的经典说说：最怕朋友">别人必评的经典说说：最怕朋友</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/jingdianshuoshuo/20140826251.html" target="_blank" title="精品空间说说：谈恋爱就像赌博">精品空间说说：谈恋爱就像赌博</a> </li>
+ </div>
+          </ul>
+        </div>
+      </div>
+      <!--ad开始-->
+      <div class="right-ad cl"><br/>
+        <div class="portal_block_summary"> <img src="/dede58/ad2.jpg" width="280px" height="280"></div>
+      </div>
+      <!--ad结束-->
+      <div class="new-article">
+        <div class="portal-hd">
+          <div class="portal_block_summary">
+            <h2>随机推荐</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div class="frame move-span cl frame-1">
+            <ul>
+              <li>
+                <h3><a href="/a/jingdianshuoshuo/20140826239.html" class="link" title="别人必评的经典说说：最怕朋友" target="_blank">别人必评的经典说说：最怕朋友</a></h3>
+                <p><i class="quote"></i>1．任你的名字就像穿针走线般缝进我的悲伤。 2．有个笑话...</p>
+              </li>
+<li>
+                <h3><a href="/a/jingdianshuoshuo/20140826228.html" class="link" title="很有内涵的说说：在最深的绝望" target="_blank">很有内涵的说说：在最深的绝望</a></h3>
+                <p><i class="quote"></i>1．曾经拥有的，不要忘记。不能得到的，更要珍惜。属于自...</p>
+              </li>
+<li>
+                <h3><a href="/a/jingdianshuoshuo/20140826227.html" class="link" title="转发最多的说说：那些说着永不" target="_blank">转发最多的说说：那些说着永不</a></h3>
+                <p><i class="quote"></i>1．常常责备自己的人，往往能得到他人的谅解。 2．想念你...</p>
+              </li>
+<li>
+                <h3><a href="/a/jingdianshuoshuo/20140826277.html" class="link" title="很不错的QQ心情：珍惜能拥有的" target="_blank">很不错的QQ心情：珍惜能拥有的</a></h3>
+                <p><i class="quote"></i>1．心烦意乱或者无聊闲着的时候，多到图书馆去泡泡，书中...</p>
+              </li>
+<li>
+                <h3><a href="/a/jingdianshuoshuo/20140826265.html" class="link" title="空间长说说：如果彼此出现早一" target="_blank">空间长说说：如果彼此出现早一</a></h3>
+                <p><i class="quote"></i>1．好女人都是宠出来的。你疼她爱她关心她，她就温柔如水...</p>
+              </li>
+<li>
+                <h3><a href="/a/jingdianshuoshuo/20140826276.html" class="link" title="经典说说心情，30句贴心话送给" target="_blank">经典说说心情，30句贴心话送给</a></h3>
+                <p><i class="quote"></i>1．爱，是世界上最美好的东西，即使它伤了你的心，也要笑...</p>
+              </li>
+<li>
+                <h3><a href="/a/jingdianshuoshuo/20140826253.html" class="link" title="非主流空间说说：有时候，一个" target="_blank">非主流空间说说：有时候，一个</a></h3>
+                <p><i class="quote"></i>1．疏远的原因大概是我需要你的时候，而你恰好都不在。...</p>
+              </li>
+<li>
+                <h3><a href="/a/jingdianshuoshuo/20140826220.html" class="link" title="经典语句心情：成长中，痛并快" target="_blank">经典语句心情：成长中，痛并快</a></h3>
+                <p><i class="quote"></i>1．原来只要是分开了的人，不论原来多么熟悉，也会慢慢变...</p>
+              </li>
+<li>
+                <h3><a href="/a/jingdianshuoshuo/20140826272.html" class="link" title="哲理说说大全：生命中再无聊的" target="_blank">哲理说说大全：生命中再无聊的</a></h3>
+                <p><i class="quote"></i>1．好好爱自己和家人，当没有爱时，回想以前你为她忽略了...</p>
+              </li>
+<li>
+                <h3><a href="/a/jingdianshuoshuo/20140826260.html" class="link" title="经典的说说心情：青春是挽不回" target="_blank">经典的说说心情：青春是挽不回</a></h3>
+                <p><i class="quote"></i>1．每天进空间，我都会习惯性在最近访客里寻找一个熟悉旳...</p>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+jQuery(".wonderful").slide({ mainCell:".bd ul", effect:"leftLoop",easing:"easeInOutQuint",delayTime:500, vis:1, scroll:1,autoPlay:true });
+jQuery(".ranking").slide({ titCell:".hd li", mainCell:".bd",delayTime:0 });
+</script> <!--侧栏幻灯切换效果--> </div>
+<!--footer开始--> 
+
+    <div id="footer" class="cl">
+          <div id="ft" class="wp cl">
+        <div class="widget" style="text-align: right;">
+               <!-- 底部logo -->
+              <p class="ftlogo">
+              <!-- 
+              <img src="/dede58/ftlogo.png" alt="" border="0">
+              -->
+              </p>
+               <!-- 底部logo -->
+            </div>
+        <div class="widget-2 last widget">
+        <!-- 
+              <h4 class="widget-title">关于我们</h4>
+             <p>
+<a href="#">联系我们</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+( 非要我备案 88888888 )</p>
+<p>这里是站点描述，站长可以在后台自行填写网站的描述介绍信息！</p>
+-->
+<p>Copyright &#169; 2017-2020 LIULIAN. 榴莲家族 版权所有 <a href="http://www.czeeland.com/" target="_blank"></a></p>
+ </div></div></div>
+ <script src="/dede58/nav.js" type="text/javascript"></script><!--导航置顶特效-->
+ <!---Top--->
+<script type="text/javascript" src="/dede58/top.js"></script> 
+<!--footer结束-->
+</body>
+</html>

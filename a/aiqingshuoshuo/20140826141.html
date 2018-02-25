@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>爱情QQ心情短语：我爱你，就像你不爱我样的坚决_我的网站</title>
+<meta name="keywords" content="" />
+<meta name="description" content="1．如果你要走，请勿回头，不然我会以为你舍不得我。 2．真正爱一个人是无法说出原因的。你只知道无论何时何地、心情好坏，你都希望这个人陪著你。 3．爱情复杂至极却也简单到死，也不过是：我爱你~对不起~没关系~谢谢你 4．少年，别放" />
+<meta name="MSSmartTagsPreventParsing" content="True">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<link rel="stylesheet" type="text/css" href="/dede58/style80_common.css">
+<link rel="stylesheet" type="text/css" href="/dede58/style80_portal_view.css">
+<script src="/dede58/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">jq = jQuery.noConflict();</script>
+<script src="/dede58/jquery.SuperSlide.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("好痛的，不要一直顶啦 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+<!--[if IE 6]>
+    <script src="/dede58/png.js" type="text/javascript" ></script>
+     <script type="text/javascript">
+     DD_belatedPNG.fix('.nav_box, .navi img, .hd_logo img, #maincontent .entry-info, #maincontent .entry-info .entry-title, .slider .slider-more, .slider-nav a, .user_link i, .usernav li .png i, .userinfo .arrow, .user_list .i_qq, .user_list .i_wb, .nav_icon, .blackbg, .comment-bubble, .slider-more');
+    </script> 
+    <script language='javascript' type="text/javascript">   
+    function ResumeError() {  
+         return true;  
+    }  
+    window.onerror = ResumeError;   
+    </script> 
+    <![endif]-->
+</head>
+<body id="nv_portal" class="pg_view">
+<!-- head begin -->
+<div id="headnav" >
+  <div id="toptb" class="cl">
+    <div class="wp"> 
+      <!-- 搜索 begin -->
+      <div id="scbar" class="cl">
+        <form id="scbar_form" name="formsearch"  action="/plus/search.php" target="_blank">
+          <input type="hidden" name="kwtype" value="0" />
+          <table cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td class="scbar_txt_td"><input type="text" name="q" id="scbar_txt" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}"/></td>
+                <td class="scbar_btn_td"><button type="submit" id="scbar_btn"  class="pn pnc"></button></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <!-- 搜索 end -->
+      <div class="userbox">
+        <ul class="usernav user_part">
+          <!-- 关注 
+          <li class="user_list"><a href="http://wpa.qq.com/msgrd?v=3&uin=1211765266&site=qq&menu=yes" target="_blank"><i class="i_qq">联系站长</i></a></li>
+          <li class="user_list"><a href="#" target="_blank" ><i class="i_wb">关注我们</i></a></li>
+          -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header">
+    <div class="hdr">
+      <div class="wp cl"> 
+        <!-- 站点LOGO -->
+        <div class="hd_logo"> <a href="/" title="宽屏清新文章类模板"> <img src="/dede58/logo.png" alt="宽屏清新文章类模板" border="0"></a> </div>
+        <!-- 导航 -->
+        <div class="nav">
+          <ul>
+            <li><a href="/" title="首页">首页<span>Home</span></a></li>
+            
+            <li><a href='/a/shangganshuoshuo/list_8_1.html' >伤感说说<span>More</span></a></li>
+            
+            <li><a href='/a/gaoxiaoshuoshuo/' >搞笑说说<span>More</span></a></li>
+            
+            <li><a href='/a/jingdianshuoshuo/' >经典说说<span>More</span></a></li>
+            
+            <li><a href='/a/gexingshuoshuo/' >个性说说<span>More</span></a></li>
+            
+            <li><a href='/a/xinqingduanyu/' >心情短语<span>More</span></a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- head end -->
+<div class="header_fake"></div>
+<div id="wp" class="wp j_wp">
+  <div id="pt" class="bm cl">
+    <div class="z"> <a href="/" class="nvhm" title="首页"></a></div>
+    当前位置：<a href='/'>主页</a> > 查看内容</div>
+  <div id="ct" class="ct2 wp cl">
+    <div class="mn animated fadeInUp">
+      <div class="bm vw">
+        <div class="h hm">
+          <div class="h_avr"><img src="/dede58/tx.jpg"></div>
+          <h1 class="ph">爱情QQ心情短语：我爱你，就像你不爱我样的坚决</h1>
+          <p class="xg1">发布时间：2014-08-26 19:12<span class="pipe">|</span> 有 <script src="/plus/count.php?view=yes&aid=141&mid=1" type='text/javascript' language="javascript"></script> 位朋友查看</p>
+        </div>
+        <div class="s">
+          <div><strong>简介：</strong>1．如果你要走，请勿回头，不然我会以为你舍不得我。 2．真正爱一个人是无法说出原因的。你只知道无论何时何地、心情好坏，你都希望这个人陪著你。 3．爱情复杂至极却也简单到死，也不过是：我爱你~对不起~没关系~谢谢你 4．少年，别放……</div>
+        </div>
+        <div class="d"> 
+          <!--ad开始-->
+          <div class="mb20">
+            <div class="portal_block_summary"> <a href="http://www.czeeland.com/" target="_blank"> <img src="/dede58/ad.jpg" width="680" height="100" ></a></div>
+          </div>
+          <!--ad结束--> 
+          　　1．如果你要走，请勿回头，不然我会以为你舍不得我。<br />
+　　<br />
+　　2．真正爱一个人是无法说出原因的。你只知道无论何时何地、心情好坏，你都希望这个人陪著你。<br />
+　　<br />
+　　3．爱情复杂至极却也简单到死，也不过是：我爱你~对不起~没关系~谢谢你&hellip;&hellip;<br />
+　　<br />
+　　4．少年，别放弃那个拿青春跟你赌未来的姑娘，好吗？<br />
+　　<br />
+　　5．有一种感情，不再浓烈，却一直存在。<br />
+　　<br />
+　　6．对于世界，你可能只是一个人，但对于某个人，你却是整个世界。<br />
+　　<br />
+　　7．再好的东西都有失去的一天，再深的记忆也有淡忘的一天，再爱的人，也有远走的一天，再美的梦也有苏醒的一天。<br />
+　　<br />
+　　8．他在他的朋友面前宣布，我是他的女朋友<br />
+　　<br />
+　　9．爱上一个人只需要一瞬间，但忘掉一个人却感觉一辈子都不够用。<br />
+　　<br />
+　　10．全世界都可以不理解我，但是只有你，不可以和全世界一起怀疑我，因为你，就是我的全世界。<br />
+　　<br />
+　　11．见或不见，并不重要，重要的是想念有多深。<br />
+　　<img alt="爱情QQ心情短语：我爱你，就像你不爱我样的坚决" src="/uploads/allimg/c140826/140Z5135444240-24S8.jpg" style="height: 282px; width: 419px" /><br />
+　　12．最好的时光，就是你喜欢我，我也喜欢你，可我们都还没表白。<br />
+　　<br />
+　　13．如果一切都是戏，我们何必演的那么逼真。对我来说，感情的戏，没演技。<br />
+　　<br />
+　　14．爱很简单：一个你，一辈子，一心一意。www.shuoshuokong.com<br />
+　　<br />
+　　15．我多想对你说那简单的三个字：我爱你！可惜连这个机会你也没给我<br />
+　　<br />
+　　16．有些人我们叫着亲爱的却并不喜欢；有些人我们骂着傻逼却是真的爱着。<br />
+　　<br />
+　　17．如果爱你是错的话，我不想对；如果对是等于没有你的话，我宁愿错一辈子；如果非要把这份爱加上一个期限，我希望是一万年。<br />
+　　<br />
+　　18．我爱你，就像你不爱我样的坚决。<br />
+　　<br />
+　　19．亲爱的，出去玩累了、受伤了的话就回来吧，我还在这里等你&hellip;<br />
+　　<br />
+　　20．每个人的回忆中，都会有个同桌让你心动过<br />
+　　<br />
+　　21．因为爱过，所以知道寂寞的滋味，因为难过，所以会常常流泪，因为不想错过这一站的幸福，所以更加的珍惜你。<br />
+　　<br />
+　　22．幸福它真的不容易，在你的背影后有我爱你。<br />
+　　<br />
+　　23．爱是一种依赖，是一种责任，是一种相互的依偎。<br />
+　　<br />
+　　24．因为爱你，是我最初许下的诺言。因为爱你，是我最终履行的誓言。<br />
+　　<br />
+　　25．如果你不爱一个人，请放手，好让别人有机会爱她。如果你爱的人放弃了你，请放开自己，好让自己有机会爱别人。<br />
+　　<br />
+　　26．我的世界不允许你的消失，不管结局是否完美。<br />
+　　<br />
+　　27．因为爱你，我更自爱。因为爱你，我知道自己的存在。因为爱你，我在成长。因为爱你，我对痛苦和快乐都有了深刻的感受。因为爱你我才知道人生有许多无法满足的事。
+          <div class="pageinfo"></div>
+          <!--正文结束--> 
+          <!--ad开始-->
+          <div class="mb20">
+            <div class="portal_block_summary"> <a href="http://www.czeeland.com/" target="_blank"> <img src="/dede58/ad.jpg" width="680" height="100" ></a></div>
+          </div>
+          <!--ad结束--> 
+        </div>
+        <div class="pren pbm cl"> <em class="z">上一篇：<a href='/a/aiqingshuoshuo/20140826140.html'>有诗意的话：注定会有某个人，让我们不得不爱</a> </em> <em class="y">下一篇：<a href='/a/aiqingshuoshuo/20140826142.html'>爱情说说大全：如果当初勇敢地在一起，会不会有不同结局</a> </em> </div>
+      </div>
+      
+      
+      <div id="comment" class="bm"> 
+        <!--兼容版，可保证页面完全兼容-->
+        <div id="SOHUCS"></div>
+        <script>
+  (function(){
+    var appid = 'cyrna3OIQ',
+    conf = 'prod_f12acd6648a127b270c750fbbf8ecb1a';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+  })()
+</script> 
+        <!-- Comment END --> 
+      </div>
+      
+      
+    </div>
+    <div class="sd pph"> 
+      <!-- 推荐图文 -->
+      <div class="portal-hd">
+        <h2>推荐图文</h2>
+      </div>
+      <div class="wonderful">
+        <div class="bd">
+          <div class="btn"> <a href="javascript:void(0)" class="prev"></a> <a href="javascript:void(0)" class="next"></a> </div>
+          <div class="tempWrap" >
+            <ul>
+              <li>
+                <div class="wonderful-pic"> <a href="/a/aiqingshuoshuo/20140826138.html" title="长的爱情说说：你不是最好的，却是我" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z51346432Z-64b6.jpg" width="280" height="220" alt="长的爱情说说：你不是最好的，却是我"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/aiqingshuoshuo/20140826138.html" title="长的爱情说说：你不是最好的，却是我" target="_blank">长的爱情说说：你不是最好的，却是我</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/aiqingshuoshuo/" title="爱情说说" target="_blank">爱情说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/aiqingshuoshuo/20140826148.html" title="QQ空间爱情说说：我知道，你是我用生命" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z513X0L30-192413.jpg" width="280" height="220" alt="QQ空间爱情说说：我知道，你是我用生命"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/aiqingshuoshuo/20140826148.html" title="QQ空间爱情说说：我知道，你是我用生命" target="_blank">QQ空间爱情说说：我知道，你是我用生命</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/aiqingshuoshuo/" title="爱情说说" target="_blank">爱情说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/aiqingshuoshuo/20140826112.html" title="爱情文字图片大全：原来爱情的世界很" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z512345K50-1ER4.jpg" width="280" height="220" alt="爱情文字图片大全：原来爱情的世界很"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/aiqingshuoshuo/20140826112.html" title="爱情文字图片大全：原来爱情的世界很" target="_blank">爱情文字图片大全：原来爱情的世界很</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/aiqingshuoshuo/" title="爱情说说" target="_blank">爱情说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/aiqingshuoshuo/20140826103.html" title="带图片的情感说说：我的微笑可以给任" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z51150035F-c937.jpg" width="280" height="220" alt="带图片的情感说说：我的微笑可以给任"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/aiqingshuoshuo/20140826103.html" title="带图片的情感说说：我的微笑可以给任" target="_blank">带图片的情感说说：我的微笑可以给任</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/aiqingshuoshuo/" title="爱情说说" target="_blank">爱情说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/aiqingshuoshuo/20140826106.html" title="空间说说关于爱情的：我早有预感，你" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z5119134G0-152X4.jpg" width="280" height="220" alt="空间说说关于爱情的：我早有预感，你"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/aiqingshuoshuo/20140826106.html" title="空间说说关于爱情的：我早有预感，你" target="_blank">空间说说关于爱情的：我早有预感，你</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/aiqingshuoshuo/" title="爱情说说" target="_blank">爱情说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/aiqingshuoshuo/20140826117.html" title="个性爱情说说：总有一个人会打破你的" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z512596220-95405.jpg" width="280" height="220" alt="个性爱情说说：总有一个人会打破你的"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/aiqingshuoshuo/20140826117.html" title="个性爱情说说：总有一个人会打破你的" target="_blank">个性爱情说说：总有一个人会打破你的</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/aiqingshuoshuo/" title="爱情说说" target="_blank">爱情说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ranking mt20">
+        <div class="hd">
+          <div class="portal_block_summary">
+            <ul>
+              <li>周排行</li>
+              <li>月排行</li>
+              <li>总排行</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bd">
+          <ul class="top10">
+            <!--周排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/aiqingshuoshuo/20140826141.html" target="_blank" title="爱情QQ心情短语：我爱你，就像">爱情QQ心情短语：我爱你，就像</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/aiqingshuoshuo/20140826127.html" target="_blank" title="唯美爱情QQ说说：爱情里，你的">唯美爱情QQ说说：爱情里，你的</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/aiqingshuoshuo/20140826103.html" target="_blank" title="带图片的情感说说：我的微笑可">带图片的情感说说：我的微笑可</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/aiqingshuoshuo/20140826153.html" target="_blank" title="有诗意的心情短语：爱情骗我说">有诗意的心情短语：爱情骗我说</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/aiqingshuoshuo/20140826122.html" target="_blank" title="爱情文字控：爱情里，总会有那">爱情文字控：爱情里，总会有那</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/aiqingshuoshuo/20140826104.html" target="_blank" title="伤感爱情心情短语：我们的爱，">伤感爱情心情短语：我们的爱，</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/aiqingshuoshuo/20140826144.html" target="_blank" title="爱情说说短语：你的一句我陪你">爱情说说短语：你的一句我陪你</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/aiqingshuoshuo/20140826105.html" target="_blank" title="唯美爱情文字图片：你的幸福路">唯美爱情文字图片：你的幸福路</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/aiqingshuoshuo/20140826118.html" target="_blank" title="QQ经典爱情说说：只在点烟时低">QQ经典爱情说说：只在点烟时低</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/aiqingshuoshuo/20140826119.html" target="_blank" title="经典爱情语录：对喜欢的人，不">经典爱情语录：对喜欢的人，不</a> </li>
+ </div>
+          </ul>
+          <ul class="top10" style="display: none; ">
+            <!--月排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/aiqingshuoshuo/20140826148.html" target="_blank" title="QQ空间爱情说说：我知道，你是">QQ空间爱情说说：我知道，你是</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/aiqingshuoshuo/20140826125.html" target="_blank" title="流行的情感说说：我爱你，曾经">流行的情感说说：我爱你，曾经</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/aiqingshuoshuo/20140826151.html" target="_blank" title="关于爱情的短句：一辈子只爱一">关于爱情的短句：一辈子只爱一</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/aiqingshuoshuo/20140826122.html" target="_blank" title="爱情文字控：爱情里，总会有那">爱情文字控：爱情里，总会有那</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/aiqingshuoshuo/20140826149.html" target="_blank" title="有诗意的爱情句子：爱情，需要">有诗意的爱情句子：爱情，需要</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/aiqingshuoshuo/20140826120.html" target="_blank" title="感情说说大全：以后我会爱上别">感情说说大全：以后我会爱上别</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/aiqingshuoshuo/20140826146.html" target="_blank" title="爱情说说带图片：恋爱，要么不">爱情说说带图片：恋爱，要么不</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/aiqingshuoshuo/20140826106.html" target="_blank" title="空间说说关于爱情的：我早有预">空间说说关于爱情的：我早有预</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/aiqingshuoshuo/20140826154.html" target="_blank" title="爱情说说心情短语：除了白头到">爱情说说心情短语：除了白头到</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/aiqingshuoshuo/20140826126.html" target="_blank" title="关于爱情的一句话：爱情，要么">关于爱情的一句话：爱情，要么</a> </li>
+ </div>
+          </ul>
+          <ul class="top10" style="display: none; ">
+            <!--总排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/aiqingshuoshuo/20140826110.html" target="_blank" title="爱一个人的说说：有些心动，一">爱一个人的说说：有些心动，一</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/aiqingshuoshuo/20140826138.html" target="_blank" title="长的爱情说说：你不是最好的，">长的爱情说说：你不是最好的，</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/aiqingshuoshuo/20140826134.html" target="_blank" title="QQ空间爱情说说：因为爱你，所">QQ空间爱情说说：因为爱你，所</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/aiqingshuoshuo/20140826152.html" target="_blank" title="情感语录说说：爱你所爱，恨你">情感语录说说：爱你所爱，恨你</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/aiqingshuoshuo/20140826132.html" target="_blank" title="小清新的爱情说说：眼睛为她下">小清新的爱情说说：眼睛为她下</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/aiqingshuoshuo/20140826104.html" target="_blank" title="伤感爱情心情短语：我们的爱，">伤感爱情心情短语：我们的爱，</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/aiqingshuoshuo/20140826136.html" target="_blank" title="很美的心情短语：我知道，你是">很美的心情短语：我知道，你是</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/aiqingshuoshuo/20140826103.html" target="_blank" title="带图片的情感说说：我的微笑可">带图片的情感说说：我的微笑可</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/aiqingshuoshuo/20140826102.html" target="_blank" title="爱情物语短句：我在你心里，能">爱情物语短句：我在你心里，能</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/aiqingshuoshuo/20140826113.html" target="_blank" title="经典感情说说：我若在你心上，">经典感情说说：我若在你心上，</a> </li>
+ </div>
+          </ul>
+        </div>
+      </div>
+      <!--ad开始-->
+      <div class="right-ad cl"><br/>
+        <div class="portal_block_summary"> <img src="/dede58/ad2.jpg" width="280px" height="280"></div>
+      </div>
+      <!--ad结束-->
+      <div class="new-article">
+        <div class="portal-hd">
+          <div class="portal_block_summary">
+            <h2>随机推荐</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div class="frame move-span cl frame-1">
+            <ul>
+              <li>
+                <h3><a href="/a/aiqingshuoshuo/20140826122.html" class="link" title="爱情文字控：爱情里，总会有那" target="_blank">爱情文字控：爱情里，总会有那</a></h3>
+                <p><i class="quote"></i>1．我再也不会为你哭，因为我的睫毛膏太贵了。 2．总会有...</p>
+              </li>
+<li>
+                <h3><a href="/a/aiqingshuoshuo/20140826110.html" class="link" title="爱一个人的说说：有些心动，一" target="_blank">爱一个人的说说：有些心动，一</a></h3>
+                <p><i class="quote"></i>1．让你在没有我的地方疯狂，让我在没有你的世界坚强。...</p>
+              </li>
+<li>
+                <h3><a href="/a/aiqingshuoshuo/20140826112.html" class="link" title="爱情文字图片大全：原来爱情的" target="_blank">爱情文字图片大全：原来爱情的</a></h3>
+                <p><i class="quote"></i>1．怎么能在拥有爱情的同时又拒绝受伤呢？别忘了，丘比特...</p>
+              </li>
+<li>
+                <h3><a href="/a/aiqingshuoshuo/2014082699.html" class="link" title="爱情心情说说：我能给予的不多" target="_blank">爱情心情说说：我能给予的不多</a></h3>
+                <p><i class="quote"></i>1．没办法，我就是喜欢你，不管世俗的人怎么看，我都还是...</p>
+              </li>
+<li>
+                <h3><a href="/a/aiqingshuoshuo/20140826117.html" class="link" title="个性爱情说说：总有一个人会打" target="_blank">个性爱情说说：总有一个人会打</a></h3>
+                <p><i class="quote"></i>1．有那么一个人放在心里会疼，拿出来会窒息。 2．曾经，...</p>
+              </li>
+<li>
+                <h3><a href="/a/aiqingshuoshuo/20140826118.html" class="link" title="QQ经典爱情说说：只在点烟时低" target="_blank">QQ经典爱情说说：只在点烟时低</a></h3>
+                <p><i class="quote"></i>1．姑娘，别傻了，世界上最爱你的男人已经娶了你妈了。...</p>
+              </li>
+<li>
+                <h3><a href="/a/aiqingshuoshuo/20140826133.html" class="link" title="情感微语录：给我一张关于你的" target="_blank">情感微语录：给我一张关于你的</a></h3>
+                <p><i class="quote"></i>1．你知道我最爱的人是谁吗？就是这句话的第一个字。 2．...</p>
+              </li>
+<li>
+                <h3><a href="/a/aiqingshuoshuo/20140826114.html" class="link" title="爱情说说控：爱情是一个笑话，" target="_blank">爱情说说控：爱情是一个笑话，</a></h3>
+                <p><i class="quote"></i>1．世上最短的咒语，是你爱人的名字。 2．有时候也想离开...</p>
+              </li>
+<li>
+                <h3><a href="/a/aiqingshuoshuo/20140826126.html" class="link" title="关于爱情的一句话：爱情，要么" target="_blank">关于爱情的一句话：爱情，要么</a></h3>
+                <p><i class="quote"></i>1．知道为什么520除不尽3吗，因为爱情容不下第三者。 2．如...</p>
+              </li>
+<li>
+                <h3><a href="/a/aiqingshuoshuo/20140826152.html" class="link" title="情感语录说说：爱你所爱，恨你" target="_blank">情感语录说说：爱你所爱，恨你</a></h3>
+                <p><i class="quote"></i>1．我没有惊天动地的爱情宣言，也没有海枯石烂的爱情承诺...</p>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+jQuery(".wonderful").slide({ mainCell:".bd ul", effect:"leftLoop",easing:"easeInOutQuint",delayTime:500, vis:1, scroll:1,autoPlay:true });
+jQuery(".ranking").slide({ titCell:".hd li", mainCell:".bd",delayTime:0 });
+</script> <!--侧栏幻灯切换效果--> </div>
+<!--footer开始--> 
+
+    <div id="footer" class="cl">
+          <div id="ft" class="wp cl">
+        <div class="widget" style="text-align: right;">
+               <!-- 底部logo -->
+              <p class="ftlogo">
+              <!-- 
+              <img src="/dede58/ftlogo.png" alt="" border="0">
+              -->
+              </p>
+               <!-- 底部logo -->
+            </div>
+        <div class="widget-2 last widget">
+        <!-- 
+              <h4 class="widget-title">关于我们</h4>
+             <p>
+<a href="#">联系我们</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+( 非要我备案 88888888 )</p>
+<p>这里是站点描述，站长可以在后台自行填写网站的描述介绍信息！</p>
+-->
+<p>Copyright &#169; 2017-2020 LIULIAN. 榴莲家族 版权所有 <a href="http://www.czeeland.com/" target="_blank"></a></p>
+ </div></div></div>
+ <script src="/dede58/nav.js" type="text/javascript"></script><!--导航置顶特效-->
+ <!---Top--->
+<script type="text/javascript" src="/dede58/top.js"></script> 
+<!--footer结束-->
+</body>
+</html>

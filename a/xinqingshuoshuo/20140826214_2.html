@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>有哲理的心情短语：频频回头的人，自然走不了远路(2)_我的网站</title>
+<meta name="keywords" content="" />
+<meta name="description" content="21．要替别人着想，但为自己而活。 22．有些路很远，走下去会很累，可是，不走，又会后悔。 23．最好的东西，往往是意料之外，偶然得来的。 24．我以" />
+<meta name="MSSmartTagsPreventParsing" content="True">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<link rel="stylesheet" type="text/css" href="/dede58/style80_common.css">
+<link rel="stylesheet" type="text/css" href="/dede58/style80_portal_view.css">
+<script src="/dede58/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">jq = jQuery.noConflict();</script>
+<script src="/dede58/jquery.SuperSlide.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("好痛的，不要一直顶啦 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+<!--[if IE 6]>
+    <script src="/dede58/png.js" type="text/javascript" ></script>
+     <script type="text/javascript">
+     DD_belatedPNG.fix('.nav_box, .navi img, .hd_logo img, #maincontent .entry-info, #maincontent .entry-info .entry-title, .slider .slider-more, .slider-nav a, .user_link i, .usernav li .png i, .userinfo .arrow, .user_list .i_qq, .user_list .i_wb, .nav_icon, .blackbg, .comment-bubble, .slider-more');
+    </script> 
+    <script language='javascript' type="text/javascript">   
+    function ResumeError() {  
+         return true;  
+    }  
+    window.onerror = ResumeError;   
+    </script> 
+    <![endif]-->
+</head>
+<body id="nv_portal" class="pg_view">
+<!-- head begin -->
+<div id="headnav" >
+  <div id="toptb" class="cl">
+    <div class="wp"> 
+      <!-- 搜索 begin -->
+      <div id="scbar" class="cl">
+        <form id="scbar_form" name="formsearch"  action="/plus/search.php" target="_blank">
+          <input type="hidden" name="kwtype" value="0" />
+          <table cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td class="scbar_txt_td"><input type="text" name="q" id="scbar_txt" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}"/></td>
+                <td class="scbar_btn_td"><button type="submit" id="scbar_btn"  class="pn pnc"></button></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <!-- 搜索 end -->
+      <div class="userbox">
+        <ul class="usernav user_part">
+          <!-- 关注 
+          <li class="user_list"><a href="http://wpa.qq.com/msgrd?v=3&uin=1211765266&site=qq&menu=yes" target="_blank"><i class="i_qq">联系站长</i></a></li>
+          <li class="user_list"><a href="#" target="_blank" ><i class="i_wb">关注我们</i></a></li>
+          -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header">
+    <div class="hdr">
+      <div class="wp cl"> 
+        <!-- 站点LOGO -->
+        <div class="hd_logo"> <a href="/" title="宽屏清新文章类模板"> <img src="/dede58/logo.png" alt="宽屏清新文章类模板" border="0"></a> </div>
+        <!-- 导航 -->
+        <div class="nav">
+          <ul>
+            <li><a href="/" title="首页">首页<span>Home</span></a></li>
+            
+            <li><a href='/a/shangganshuoshuo/list_8_1.html' >伤感说说<span>More</span></a></li>
+            
+            <li><a href='/a/gaoxiaoshuoshuo/' >搞笑说说<span>More</span></a></li>
+            
+            <li><a href='/a/jingdianshuoshuo/' >经典说说<span>More</span></a></li>
+            
+            <li><a href='/a/gexingshuoshuo/' >个性说说<span>More</span></a></li>
+            
+            <li><a href='/a/xinqingduanyu/' >心情短语<span>More</span></a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- head end -->
+<div class="header_fake"></div>
+<div id="wp" class="wp j_wp">
+  <div id="pt" class="bm cl">
+    <div class="z"> <a href="/" class="nvhm" title="首页"></a></div>
+    当前位置：<a href='/'>主页</a> > 查看内容</div>
+  <div id="ct" class="ct2 wp cl">
+    <div class="mn animated fadeInUp">
+      <div class="bm vw">
+        <div class="h hm">
+          <div class="h_avr"><img src="/dede58/tx.jpg"></div>
+          <h1 class="ph">有哲理的心情短语：频频回头的人，自然走不了远路(2)</h1>
+          <p class="xg1">发布时间：2014-08-26 19:18<span class="pipe">|</span> 有 <script src="/plus/count.php?view=yes&aid=214&mid=1" type='text/javascript' language="javascript"></script> 位朋友查看</p>
+        </div>
+        <div class="s">
+          <div><strong>简介：</strong>21．要替别人着想，但为自己而活。 22．有些路很远，走下去会很累，可是，不走，又会后悔。 23．最好的东西，往往是意料之外，偶然得来的。 24．我以……</div>
+        </div>
+        <div class="d"> 
+          <!--ad开始-->
+          <div class="mb20">
+            <div class="portal_block_summary"> <a href="http://www.czeeland.com/" target="_blank"> <img src="/dede58/ad.jpg" width="680" height="100" ></a></div>
+          </div>
+          <!--ad结束--> 
+          
+
+
+
+
+<br />
+　　21．要替别人着想，但为自己而活。<br />
+　　<br />
+　　22．有些路很远，走下去会很累，可是，不走，又会后悔。<br />
+　　<br />
+　　23．最好的东西，往往是意料之外，偶然得来的。<br />
+　　<br />
+　　24．我以为我会报复，但是我没有。<br />
+　　<br />
+　　25．公主的纯情写在脸上，巫婆的深情种在心里。<br />
+　　<br />
+　　26．我想你，可是却无法见到你，我嫉妒那些天天都可以看到你的人。<br />
+　　<br />
+　　27．真正的知己，看上去比骗子还冷漠。<br />
+　　<br />
+　　28．有时候，你不得不假装很快乐，只是为了不让别人问你怎么了？<br />
+　　<br />
+　　29．频频回头的人，自然走不了远路。<br />
+　　<br />
+　　30．勤奋但不讲究效率的结果就是：笨鸟先飞，然后不知所踪。<br />
+　　<img alt="有哲理的心情短语：频频回头的人，自然走不了远路" src="/uploads/allimg/c140826/140Z51M420540-12Q61.jpg" style="height: 263px; width: 400px" /><br />
+　　31．不到没有退路之时，你永远不会知道自己有多强大！<br />
+　　<br />
+　　32．心里放不过自己，是没有智慧；心里放不过别人，是没有慈悲。<br />
+　　<br />
+　　33．笑是人与人之间最短的距离。<br />
+　　<br />
+　　34．即使你只是我生命拼图的一小块，但是没有你，我的生命便不会完整。<br />
+　　<br />
+　　35．我希望躺在向日葵上，即使沮丧，也能朝着阳光。<br />
+　　<br />
+　　36．智者把放下当前进，愚者把放下当绝望&mdash;你能放下多少，幸福就有多少。<br />
+　　<br />
+　　37．不能成为我一个人的，就算再好，硬塞给我，我都不会要。<br />
+　　<br />
+　　38．人之所以活的累，是因为放不下架子，撕不开面子，解不开情结。<br />
+　　<br />
+　　39．不要追寻前人的脚印，而是追求他们的目标。<br />
+　　<br />
+　　40．当你手中抓住一件东西不放时，你只能拥有一件东西，如果你肯放手，你就有机会选择更多。
+          <div class="pageinfo"><li><a>共2页: </a></li><li><a href='20140826214.html'>上一页</a></li><li><a href='20140826214.html'>1</a></li><li class="thisclass"><a href='#'>2</a></li><li><a href='#'>下一页</a></li></div>
+          <!--正文结束--> 
+          <!--ad开始-->
+          <div class="mb20">
+            <div class="portal_block_summary"> <a href="http://www.czeeland.com/" target="_blank"> <img src="/dede58/ad.jpg" width="680" height="100" ></a></div>
+          </div>
+          <!--ad结束--> 
+        </div>
+        <div class="pren pbm cl"> <em class="z">上一篇：<a href='/a/xinqingshuoshuo/20140826213.html'>QQ空间精品说说：你是回头草，但我是好马</a> </em> <em class="y">下一篇：<a href='/a/xinqingshuoshuo/20140826215.html'>2013流行的说说：如果方向错了，停下来就是前进</a> </em> </div>
+      </div>
+      
+      
+      <div id="comment" class="bm"> 
+        <!--兼容版，可保证页面完全兼容-->
+        <div id="SOHUCS"></div>
+        <script>
+  (function(){
+    var appid = 'cyrna3OIQ',
+    conf = 'prod_f12acd6648a127b270c750fbbf8ecb1a';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+  })()
+</script> 
+        <!-- Comment END --> 
+      </div>
+      
+      
+    </div>
+    <div class="sd pph"> 
+      <!-- 推荐图文 -->
+      <div class="portal-hd">
+        <h2>推荐图文</h2>
+      </div>
+      <div class="wonderful">
+        <div class="bd">
+          <div class="btn"> <a href="javascript:void(0)" class="prev"></a> <a href="javascript:void(0)" class="next"></a> </div>
+          <div class="tempWrap" >
+            <ul>
+              <li>
+                <div class="wonderful-pic"> <a href="/a/xinqingshuoshuo/20140826179.html" title="扣扣空间说说：谈恋爱就像剥洋葱，总" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z51642cc0-135031.jpg" width="280" height="220" alt="扣扣空间说说：谈恋爱就像剥洋葱，总"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/xinqingshuoshuo/20140826179.html" title="扣扣空间说说：谈恋爱就像剥洋葱，总" target="_blank">扣扣空间说说：谈恋爱就像剥洋葱，总</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/xinqingshuoshuo/" title="心情说说" target="_blank">心情说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/xinqingshuoshuo/20140826175.html" title="百度贴吧小尾巴语录：我谈过最长的恋" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z51623W4P-2S24.jpg" width="280" height="220" alt="百度贴吧小尾巴语录：我谈过最长的恋"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/xinqingshuoshuo/20140826175.html" title="百度贴吧小尾巴语录：我谈过最长的恋" target="_blank">百度贴吧小尾巴语录：我谈过最长的恋</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/xinqingshuoshuo/" title="心情说说" target="_blank">心情说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/xinqingshuoshuo/20140826174.html" title="经典个性心情短语：回忆，很美，却很" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z5161U5050-21I28.jpg" width="280" height="220" alt="经典个性心情短语：回忆，很美，却很"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/xinqingshuoshuo/20140826174.html" title="经典个性心情短语：回忆，很美，却很" target="_blank">经典个性心情短语：回忆，很美，却很</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/xinqingshuoshuo/" title="心情说说" target="_blank">心情说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/xinqingshuoshuo/20140826216.html" title="和雨有关的句子：找不到喜欢的伞、我" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z51NC4G0-5J92.jpg" width="280" height="220" alt="和雨有关的句子：找不到喜欢的伞、我"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/xinqingshuoshuo/20140826216.html" title="和雨有关的句子：找不到喜欢的伞、我" target="_blank">和雨有关的句子：找不到喜欢的伞、我</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/xinqingshuoshuo/" title="心情说说" target="_blank">心情说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/xinqingshuoshuo/20140826178.html" title="QQ心情短语大全：你给的伤害是喉咙里吐" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z5163B3A0-104552.jpg" width="280" height="220" alt="QQ心情短语大全：你给的伤害是喉咙里吐"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/xinqingshuoshuo/20140826178.html" title="QQ心情短语大全：你给的伤害是喉咙里吐" target="_blank">QQ心情短语大全：你给的伤害是喉咙里吐</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/xinqingshuoshuo/" title="心情说说" target="_blank">心情说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+<li>
+                <div class="wonderful-pic"> <a href="/a/xinqingshuoshuo/20140826156.html" title="个人说说超拽：有时候疏远某人不是讨" target="_blank"><i></i> <img src="/uploads/allimg/c140826/140Z5149333130-43946.jpg" width="280" height="220" alt="个人说说超拽：有时候疏远某人不是讨"></a>
+                  <div class="text-box">
+                    <h3><a href="/a/xinqingshuoshuo/20140826156.html" title="个人说说超拽：有时候疏远某人不是讨" target="_blank">个人说说超拽：有时候疏远某人不是讨</a></h3>
+                    <div class="meta"> <span class="meta-column"><i></i> <a href="/a/xinqingshuoshuo/" title="心情说说" target="_blank">心情说说</a></span> </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ranking mt20">
+        <div class="hd">
+          <div class="portal_block_summary">
+            <ul>
+              <li>周排行</li>
+              <li>月排行</li>
+              <li>总排行</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bd">
+          <ul class="top10">
+            <!--周排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/xinqingshuoshuo/20140826191.html" target="_blank" title="微信心情短语：别在我的世界里">微信心情短语：别在我的世界里</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/xinqingshuoshuo/20140826209.html" target="_blank" title="QQ心情说说：你说我是你的命，">QQ心情说说：你说我是你的命，</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/xinqingshuoshuo/20140826212.html" target="_blank" title="很赞的句子：你可以不喜欢，但">很赞的句子：你可以不喜欢，但</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/xinqingshuoshuo/20140826199.html" target="_blank" title="2013流行句子：我什么都不怕，只">2013流行句子：我什么都不怕，只</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/xinqingshuoshuo/20140826176.html" target="_blank" title="校园QQ说说：用一句话形容我们">校园QQ说说：用一句话形容我们</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/xinqingshuoshuo/20140826213.html" target="_blank" title="QQ空间精品说说：你是回头草，">QQ空间精品说说：你是回头草，</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/xinqingshuoshuo/20140826197.html" target="_blank" title="空间说说大全：独立，永远。不">空间说说大全：独立，永远。不</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/xinqingshuoshuo/20140826182.html" target="_blank" title="热门心情说说：总有一个人是你">热门心情说说：总有一个人是你</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/xinqingshuoshuo/20140826198.html" target="_blank" title="有哲理的话：我们要在安静中，">有哲理的话：我们要在安静中，</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/xinqingshuoshuo/20140826168.html" target="_blank" title="最新说说心情短语：没有人像你">最新说说心情短语：没有人像你</a> </li>
+ </div>
+          </ul>
+          <ul class="top10" style="display: none; ">
+            <!--月排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/xinqingshuoshuo/20140826205.html" target="_blank" title="关于七夕的说说，七夕情人节说">关于七夕的说说，七夕情人节说</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/xinqingshuoshuo/20140826197.html" target="_blank" title="空间说说大全：独立，永远。不">空间说说大全：独立，永远。不</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/xinqingshuoshuo/20140826167.html" target="_blank" title="表达心情的句子：我以为我害怕">表达心情的句子：我以为我害怕</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/xinqingshuoshuo/20140826203.html" target="_blank" title="经典个性说说：有时候就是想大">经典个性说说：有时候就是想大</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/xinqingshuoshuo/20140826211.html" target="_blank" title="个人说说大全：猜忌，让所有的">个人说说大全：猜忌，让所有的</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/xinqingshuoshuo/20140826187.html" target="_blank" title="会火的说说心情短语：我有我的">会火的说说心情短语：我有我的</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/xinqingshuoshuo/20140826175.html" target="_blank" title="百度贴吧小尾巴语录：我谈过最">百度贴吧小尾巴语录：我谈过最</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/xinqingshuoshuo/20140826157.html" target="_blank" title="微信心情：有时候，我们一瞬间">微信心情：有时候，我们一瞬间</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/xinqingshuoshuo/20140826176.html" target="_blank" title="校园QQ说说：用一句话形容我们">校园QQ说说：用一句话形容我们</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/xinqingshuoshuo/20140826201.html" target="_blank" title="精品QQ说说：原来，友谊也容不">精品QQ说说：原来，友谊也容不</a> </li>
+ </div>
+          </ul>
+          <ul class="top10" style="display: none; ">
+            <!--总排行-->
+            <div class="frame move-span cl frame-1"> <li class="top"> <span class="num">1</span> <a href="/a/xinqingshuoshuo/20140826161.html" target="_blank" title="空间繁体字心情：有一種感情，">空间繁体字心情：有一種感情，</a> </li>
+<li class="top"> <span class="num">2</span> <a href="/a/xinqingshuoshuo/20140826189.html" target="_blank" title="心情说说大全：学校最大的错误">心情说说大全：学校最大的错误</a> </li>
+<li class="top"> <span class="num">3</span> <a href="/a/xinqingshuoshuo/20140826196.html" target="_blank" title="长的说说心情：有时候，觉得自">长的说说心情：有时候，觉得自</a> </li>
+<li class="top"> <span class="num">4</span> <a href="/a/xinqingshuoshuo/20140826173.html" target="_blank" title="飞信心情短语：亲爱的过去，请">飞信心情短语：亲爱的过去，请</a> </li>
+<li class="top"> <span class="num">5</span> <a href="/a/xinqingshuoshuo/20140826210.html" target="_blank" title="qq空间心情短语：突然发现生命">qq空间心情短语：突然发现生命</a> </li>
+<li class="top"> <span class="num">6</span> <a href="/a/xinqingshuoshuo/20140826216.html" target="_blank" title="和雨有关的句子：找不到喜欢的">和雨有关的句子：找不到喜欢的</a> </li>
+<li class="top"> <span class="num">7</span> <a href="/a/xinqingshuoshuo/20140826168.html" target="_blank" title="最新说说心情短语：没有人像你">最新说说心情短语：没有人像你</a> </li>
+<li class="top"> <span class="num">8</span> <a href="/a/xinqingshuoshuo/20140826182.html" target="_blank" title="热门心情说说：总有一个人是你">热门心情说说：总有一个人是你</a> </li>
+<li class="top"> <span class="num">9</span> <a href="/a/xinqingshuoshuo/20140826206.html" target="_blank" title="有哲理的短句：原来，有些人不">有哲理的短句：原来，有些人不</a> </li>
+<li class="top"> <span class="num">10</span> <a href="/a/xinqingshuoshuo/20140826193.html" target="_blank" title="时尚的QQ说说：什么时候你回我">时尚的QQ说说：什么时候你回我</a> </li>
+ </div>
+          </ul>
+        </div>
+      </div>
+      <!--ad开始-->
+      <div class="right-ad cl"><br/>
+        <div class="portal_block_summary"> <img src="/dede58/ad2.jpg" width="280px" height="280"></div>
+      </div>
+      <!--ad结束-->
+      <div class="new-article">
+        <div class="portal-hd">
+          <div class="portal_block_summary">
+            <h2>随机推荐</h2>
+          </div>
+        </div>
+        <div class="bd">
+          <div class="frame move-span cl frame-1">
+            <ul>
+              <li>
+                <h3><a href="/a/xinqingshuoshuo/20140826163.html" class="link" title="心情说说经典的：父母能陪我们" target="_blank">心情说说经典的：父母能陪我们</a></h3>
+                <p><i class="quote"></i>1．每个没心没肺的人，都有一段为某人掏心掏肺的曾经。...</p>
+              </li>
+<li>
+                <h3><a href="/a/xinqingshuoshuo/20140826194.html" class="link" title="有个性的心情短语：考试的时候" target="_blank">有个性的心情短语：考试的时候</a></h3>
+                <p><i class="quote"></i>1．心情不好的时候就去超市，捏捏方便面，摇摇可乐，掰掰...</p>
+              </li>
+<li>
+                <h3><a href="/a/xinqingshuoshuo/20140826217.html" class="link" title="唯美说说心情：你的名字，是我" target="_blank">唯美说说心情：你的名字，是我</a></h3>
+                <p><i class="quote"></i>1.原来，一个人真的会变成自己曾经最反感的样子。 2.是你让...</p>
+              </li>
+<li>
+                <h3><a href="/a/xinqingshuoshuo/20140826187.html" class="link" title="会火的说说心情短语：我有我的" target="_blank">会火的说说心情短语：我有我的</a></h3>
+                <p><i class="quote"></i>1．小时候画在手上的表没有动，却带走了我们最好的时光。...</p>
+              </li>
+<li>
+                <h3><a href="/a/xinqingshuoshuo/20140826175.html" class="link" title="百度贴吧小尾巴语录：我谈过最" target="_blank">百度贴吧小尾巴语录：我谈过最</a></h3>
+                <p><i class="quote"></i>1．世上闲人那么多，偏偏你入了我的眼。 2．因为爱你，我...</p>
+              </li>
+<li>
+                <h3><a href="/a/xinqingshuoshuo/20140826174.html" class="link" title="经典个性心情短语：回忆，很美" target="_blank">经典个性心情短语：回忆，很美</a></h3>
+                <p><i class="quote"></i>1．承诺没有统一零售价，有时一文不值，有时千金难买。...</p>
+              </li>
+<li>
+                <h3><a href="/a/xinqingshuoshuo/20140826159.html" class="link" title="有感觉的句子：你的幸福，常常" target="_blank">有感觉的句子：你的幸福，常常</a></h3>
+                <p><i class="quote"></i>1．山盟海誓是一种经常让高山和海洋领受尴尬的重量级承诺...</p>
+              </li>
+<li>
+                <h3><a href="/a/xinqingshuoshuo/20140826204.html" class="link" title="最新QQ心情：总会有这么一个人" target="_blank">最新QQ心情：总会有这么一个人</a></h3>
+                <p><i class="quote"></i>1．有些人，表面装的对你很好，实际呢？ 2．当有一天我把...</p>
+              </li>
+<li>
+                <h3><a href="/a/xinqingshuoshuo/20140826197.html" class="link" title="空间说说大全：独立，永远。不" target="_blank">空间说说大全：独立，永远。不</a></h3>
+                <p><i class="quote"></i>1．不是所有的努力都会成功，但是，不努力，就一定不会成...</p>
+              </li>
+<li>
+                <h3><a href="/a/xinqingshuoshuo/20140826190.html" class="link" title="心情QQ说说大全：承诺就像放屁" target="_blank">心情QQ说说大全：承诺就像放屁</a></h3>
+                <p><i class="quote"></i>1．心若没有栖息的地方，到哪里都是在流浪。 2．一个人的...</p>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+jQuery(".wonderful").slide({ mainCell:".bd ul", effect:"leftLoop",easing:"easeInOutQuint",delayTime:500, vis:1, scroll:1,autoPlay:true });
+jQuery(".ranking").slide({ titCell:".hd li", mainCell:".bd",delayTime:0 });
+</script> <!--侧栏幻灯切换效果--> </div>
+<!--footer开始--> 
+
+    <div id="footer" class="cl">
+          <div id="ft" class="wp cl">
+        <div class="widget" style="text-align: right;">
+               <!-- 底部logo -->
+              <p class="ftlogo">
+              <!-- 
+              <img src="/dede58/ftlogo.png" alt="" border="0">
+              -->
+              </p>
+               <!-- 底部logo -->
+            </div>
+        <div class="widget-2 last widget">
+        <!-- 
+              <h4 class="widget-title">关于我们</h4>
+             <p>
+<a href="#">联系我们</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+<a href="#">自定义</a><span class="pipe">|</span>
+( 非要我备案 88888888 )</p>
+<p>这里是站点描述，站长可以在后台自行填写网站的描述介绍信息！</p>
+-->
+<p>Copyright &#169; 2017-2020 LIULIAN. 榴莲家族 版权所有 <a href="http://www.czeeland.com/" target="_blank"></a></p>
+ </div></div></div>
+ <script src="/dede58/nav.js" type="text/javascript"></script><!--导航置顶特效-->
+ <!---Top--->
+<script type="text/javascript" src="/dede58/top.js"></script> 
+<!--footer结束-->
+</body>
+</html>
